@@ -1,0 +1,13 @@
+{
+  "name": "anabelbarrio.com",
+  "version": "1.0.0",
+  "description": "A vuepress blog that uses tailwind",
+  "main": "index.js",
+  "repository": "https://github.com/anabel/vuewind",
+  "author": "Anabel Barrio",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "tailwindcss": "^1.1.3"
+  }
+}
