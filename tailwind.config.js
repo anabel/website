@@ -220,7 +220,14 @@ module.exports = {
       default: '1',
     },
     fontFamily: {
+      header: [ 'bookmania', 'Georgia',
+      'Cambria',
+      '"Times New Roman"',
+      'Times',
+      'serif',
+      ],
       sans: [
+        'freight-neo-pro',
         '-apple-system',
         'BlinkMacSystemFont',
         '"Segoe UI"',

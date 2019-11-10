@@ -7,4 +7,7 @@ module.exports = {
         require("autoprefixer"),
       ],
     },
+    markdown: {
+      anchor: { permalink: false }
+    }
   }
