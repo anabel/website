@@ -1,6 +1,5 @@
 ---
 title: La cámara Réflex
-excerpt: Características de las cámaras reflex
 date: 2009-04-10 09:00:00
 layout: Post
 tags: "equipo fotográfico"
@@ -15,6 +14,8 @@ La fotografía, en contra de lo que pueda parecer, no es un medio objetivo.
 El que mira elige qué encuadra, y que queda fuera de la fotografía al disparar. La cámara es una herramienta que se usa muchas veces para construir una imagen, bien a partir de una idea o simplemente para expresar nuestra percepción.
 
 Pero sea cual sea nuestra intención, es imprescindible dedicar algo de tiempo a conocerla si queremos sacarle el máximo partido.
+
+<!-- more -->
 
 ## ¿Qué ventajas tiene una cámara reflex frente a una compacta?
 

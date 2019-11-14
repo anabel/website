@@ -22,41 +22,49 @@ font-display:auto;font-style:normal;font-weight:600;
   @apply text-gray-800 font-sans;
 }
 
-body {
-  @apply mx-auto w-5/6;
+.metadata {
+  @apply text-gray-600;
+}
+
+.btn {
+  @apply text-white font-sans py-2 px-3 bg-gray-600;
+}
+
+p strong {
+  @apply text-gray-700 bg-yellow-200;
 }
 
 h1 {
    @apply title text-2xl mt-10 mb-2;
 }
 
-h2, h3, h4 {
-  @apply title mt-3 mb-1;
-}
-
 h2 {
-   @apply text-xl;
+   @apply title text-xl;
 }
 
 h3, h4 {
-   @apply text-lg;
+   @apply title text-lg;
 }
 
 html {
   @apply paragraph text-base;
 }
 
+body {
+  @apply mx-auto w-5/6;
+}
+
 p {
   @apply mt-1 mb-2;
 }
 
-p strong {
-  @apply bg-yellow-200 text-gray-700;
+h2, h3, h4, .btn {
+  @apply mt-3 mb-1;
 }
 
-.metadata {
-  @apply text-gray-600;
-}
+
+
+
 
 @tailwind components;
 

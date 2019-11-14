@@ -1,6 +1,5 @@
 ---
 title: Sensor, resolución y calidad fotográfica
-excerpt: Describo qué relación existe entre la resolución y la calidad fotográfica; Los megapíxeles no importan tanto.
 date: 2009-05-25 18:13:00
 layout: Post
 tags: ["equipo fotográfico", "opinión"]
@@ -9,6 +8,8 @@ tags: ["equipo fotográfico", "opinión"]
 # Sensor, resolución y calidad fotográfica
 
 Hoy en día vivimos una verdadera maratón de megapíxeles en el mercado de las cámaras digitales. Marcas e intermediarios nos venden en su publicidad que el número de píxeles de una imagen es directamente proporcional su calidad, y eso, como veremos a continuación, no es del todo cierto.
+
+<!-- more -->
 
 ## ¿Importan los megapíxeles?
 
