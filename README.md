@@ -1,1 +1,4 @@
-# Home
+---
+title: Blog
+layout: Blog
+---
