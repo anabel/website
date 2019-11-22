@@ -3,7 +3,7 @@
     v-if="dynamicComponent"
     :is="dynamicComponent"
     :value="page"
-    :page-count="20"
+    :page-count="pageCount"
     :click-handler="goto"
     :prev-text="'Anterior'"
     :next-text="'Siguiente'"
@@ -31,7 +31,7 @@ export default {
   },
   methods: {
     goto(page) {
-      console.log(page);
+      this.$emit("page-updated", page);
     }
   },
   mounted() {
