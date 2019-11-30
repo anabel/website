@@ -1,7 +1,12 @@
 <script>
 export default {
   name: "Blog",
-  props: ["page"],
+  props: {
+    page: {
+      type: Number,
+      default: 1
+    }
+  },
   data() {
     return {
       pageSize: 2
@@ -26,12 +31,8 @@ export default {
 
 <template>
   <div>
-    <Posts :posts="this.posts" :page="Number(page)" :page-size="this.pageSize" />
-    <Pagination
-      :number-of-items="this.posts.length"
-      :page-size="this.pageSize"
-      :page="Number(page)"
-    />
+    <Posts :posts="this.posts" :page="this.page" :page-size="this.pageSize" />
+    <Pagination :number-of-items="this.posts.length" :page-size="this.pageSize" :page="this.page" />
   </div>
 </template>
 

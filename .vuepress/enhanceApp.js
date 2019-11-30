@@ -6,11 +6,17 @@ export default ({
   router, // the router instance for the app
   siteData // site metadata
 }) => {
+  function PageToNumber(route) {
+    return {
+      page: Number(route.params.page)
+    };
+  }
+
   router.addRoutes([
     {
       path: "/posts/:page",
       component: Blog,
-      props: true
+      props: PageToNumber
     }
   ]);
 };

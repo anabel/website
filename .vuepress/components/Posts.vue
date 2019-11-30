@@ -18,8 +18,7 @@ export default {
       type: Array
     },
     page: {
-      type: Number,
-      default: 1
+      type: Number
     },
     pageSize: {
       type: Number,
