@@ -1,10 +1,15 @@
 <script>
 export default {
   name: "Blog",
+  props: {
+    page: {
+      type: Number,
+      default: 1
+    }
+  },
   data() {
     return {
-      page: 1,
-      pagination: 2
+      pageSize: 2
     };
   },
   computed: {
@@ -14,14 +19,6 @@ export default {
         .sort(
           (a, b) => new Date(b.frontmatter.date) - new Date(a.frontmatter.date)
         );
-    },
-    pageCount() {
-      return Math.ceil(this.posts.length / this.pagination);
-    },
-    postsOfPage() {
-      let s = this.pagination * (this.page - 1);
-      let e = this.pagination * this.page;
-      return this.posts.slice(s, e); //slice does not include end [start, end)
     }
   },
   methods: {
@@ -33,7 +30,10 @@ export default {
 </script>
 
 <template>
-  <Posts :posts="postsOfPage" />
+  <div>
+    <Posts :posts="this.posts" :page="this.page" :page-size="this.pageSize" />
+    <Pagination :number-of-items="this.posts.length" :page-size="this.pageSize" :page="this.page" />
+  </div>
 </template>
 
 <style lang="stylus">

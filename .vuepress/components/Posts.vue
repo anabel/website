@@ -1,6 +1,6 @@
 <template>
   <ul class="flex-1 max-w-xl mx-auto leading-normal">
-    <li v-for="post in posts">
+    <li v-for="post in postsOfPage">
       <div v-html="post.excerpt"></div>
       <p
         class="metadata"
@@ -14,7 +14,23 @@
 export default {
   name: "posts",
   props: {
-    posts: Array
+    posts: {
+      type: Array
+    },
+    page: {
+      type: Number
+    },
+    pageSize: {
+      type: Number,
+      default: 10
+    }
+  },
+  computed: {
+    postsOfPage() {
+      let s = this.pageSize * (this.page - 1);
+      let e = this.pageSize * this.page;
+      return this.posts.slice(s, e); //slice does not include end [start, end)
+    }
   },
   methods: {
     publishDate(date) {
