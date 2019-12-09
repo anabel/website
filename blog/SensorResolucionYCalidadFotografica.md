@@ -15,7 +15,7 @@ Hoy en día vivimos una verdadera maratón de megapíxeles en el mercado de las 
 
 Cuantos más píxeles tenga un sensor, más alta será su resolución. En [wikipedia](https://en.wikipedia.org/wiki/Pixel#/media/File:Sensorauflösungen.svg) tenéis un gráfico con algunas de las más comunes.
 
-<image alt="Unas manos sujetan una fotografía de 20x30 en el primer plano mientras se aprecia una pantalla con una galería de fotos en el fondo" />
+<Photo name="pantalla_con_galeria" alt="Unas manos sujetan una fotografía de 20x30 en el primer plano mientras se aprecia una pantalla con una galería de fotos en el fondo" />
 
 Fotografía de [RawPixel](https://unsplash.com/photos/xi9d8YSLNo4)
 
@@ -27,13 +27,13 @@ La tecnología hoy en día permite aglutinar **millones de píxeles en sensores 
 
 Con independencia del tipo de sensor que elijamos (como he comentado en [este artículo](https://www.anabelbarrio.com/2009/05/el-sensor-de-las-camaras-digitales/) existen implementaciones muy buenas en todas las tecnologías) y del tipo de cámara del que hablemos (móvil, reflex, mirrorless), lo que va a dar calidad a las fotos no son los megapíxeles del sensor, sino la calidad del equipo en su conjunto, y sobre todo, **la calidad de su lente**.
 
-<image alt="Detalle del diafragma cerrado de un objetivo" />
+<Photo name="diafragma_cerrado" alt="Detalle del diafragma cerrado de un objetivo" />
 
 Fotografía de [ShareGrid](https://unsplash.com/photos/7IBigEuL9Tw)
 
 De poco sirve un sensor con gran capacidad para apreciar matices de luz si el haz que llega del objetivo se difumina al pasar a través de éste y se proyecta sobre varias de las celdas del sensor.
 
-Si la lente es mala, varios fotodiodos del sensor estarán __contaminados__ y tendrán el mismo valor, y por tanto, que **se comportarán como un sólo píxel en realidad.**
+Si la lente es mala, varios fotodiodos del sensor estarán **contaminados** y tendrán el mismo valor, y por tanto, que **se comportarán como un sólo píxel en realidad.**
 
 ## ¿Cómo afecta esto a los móviles?
 
@@ -41,4 +41,4 @@ Si la lente es mala, varios fotodiodos del sensor estarán __contaminados__ y te
 
 Fotografía de [eleven x](https://unsplash.com/photos/RbAfTwB4PRA)
 
-La calidad de las lentes de los móviles en general es inferior a la de cualquier cámara y sus sensores son mucho más pequeños,  por lo que aumentar el número de megapíxeles de estas cámaras solo consigue reducir la sensibilidad del sensor, y aumentar tanto el ruido como la aberración cromática de las fotos, además de mayores pérdidas en la compresión JPEG.
+La calidad de las lentes de los móviles en general es inferior a la de cualquier cámara y sus sensores son mucho más pequeños, por lo que aumentar el número de megapíxeles de estas cámaras solo consigue reducir la sensibilidad del sensor, y aumentar tanto el ruido como la aberración cromática de las fotos, además de mayores pérdidas en la compresión JPEG.
