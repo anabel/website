@@ -1,16 +1,22 @@
 <template>
   <picture>
-    <source v-for="screen in this.screens" :srcset="sourcename(screen)" :media="media(screen)" />
+    <source
+      v-for="breakpoint in this.breakpoints"
+      :srcset="sourcename(breakpoint)"
+      :media="media(breakpoint)"
+    />
     <img :src="filename" :alt="alt" />
   </picture>
 </template>
 
 <script>
+const mediaCondition = "max-width";
+
 export default {
   name: "photo",
   data() {
     return {
-      screens: {
+      mediaQueries: {
         type: Object
       }
     };
@@ -27,35 +33,43 @@ export default {
       type: String,
       default: "jpg"
     },
-    breakpoint: {
-      type: String,
-      default: "min-width"
+    customBreakpoints: {
+      type: Array
     }
   },
   computed: {
     filename() {
       return this.name.concat(".").concat(this.ext);
+    },
+    defaultBreakpoints() {
+      return Object.keys(this.mediaQueries);
+    },
+    breakpoints() {
+      if (this.customBreakpoints) {
+        return this.customBreakpoints;
+      }
+      return this.defaultBreakpoints;
     }
   },
   methods: {
-    media(screen) {
+    media(breakpoint) {
+      let viewport = this.mediaQueries[breakpoint];
       return "("
-        .concat(this.breakpoint)
+        .concat(mediaCondition)
         .concat(": ")
-        .concat(screen)
+        .concat(viewport)
         .concat(")");
     },
-    sourcename(screen) {
-      return [this.name, screen]
+    sourcename(breakpoint) {
+      return [this.name, breakpoint]
         .join("_")
         .concat(".")
         .concat(this.ext);
     }
   },
   created() {
-    import("tailwindcss/resolveConfig").then(module => {
-      const fullConfig = module.default("../../tailwind.config.js");
-      this.screens = Object.values(fullConfig.theme.screens);
+    import("tailwindcss/defaultConfig").then(config => {
+      this.mediaQueries = config.theme.screens;
     });
   }
 };
