@@ -2,15 +2,16 @@
   <picture>
     <source
       v-for="breakpoint in this.breakpoints"
-      :srcset="sourcename(breakpoint)"
+      :srcset="getImageUrl(src(breakpoint))"
       :media="media(breakpoint)"
     />
-    <img :src="filename" :alt="alt" />
+    <img :src="getImageUrl(this.name)" :alt="this.alt" />
   </picture>
 </template>
 
 <script>
 const mediaCondition = "max-width";
+const separator = ".";
 
 export default {
   name: "photo",
@@ -29,18 +30,11 @@ export default {
     alt: {
       type: String
     },
-    ext: {
-      type: String,
-      default: "jpg"
-    },
     customBreakpoints: {
       type: Array
     }
   },
   computed: {
-    filename() {
-      return this.name.concat(".").concat(this.ext);
-    },
     defaultBreakpoints() {
       return Object.keys(this.mediaQueries);
     },
@@ -60,11 +54,20 @@ export default {
         .concat(viewport)
         .concat(")");
     },
-    sourcename(breakpoint) {
-      return [this.name, breakpoint]
+    src(breakpoint) {
+      if (!this.name.includes(separator)) {
+        return this.name;
+      }
+      let filename = this.name.split(separator);
+      return [filename[0], breakpoint]
         .join("_")
-        .concat(".")
-        .concat(this.ext);
+        .concat(separator)
+        .concat(filename[1]);
+    },
+    getImageUrl(filename) {
+      try {
+        return require("@images/" + filename);
+      } catch (error) {}
     }
   },
   created() {

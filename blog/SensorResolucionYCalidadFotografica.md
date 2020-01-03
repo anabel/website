@@ -15,7 +15,7 @@ Hoy en día vivimos una verdadera maratón de megapíxeles en el mercado de las 
 
 Cuantos más píxeles tenga un sensor, más alta será su resolución. En [wikipedia](https://en.wikipedia.org/wiki/Pixel#/media/File:Sensorauflösungen.svg) tenéis un gráfico con algunas de las más comunes.
 
-<Photo :custom-breakpoints="['sm', 'lg']" name="pantalla_con_galeria" alt="Unas manos sujetan una fotografía de 20x30 en el primer plano mientras se aprecia una pantalla con una galería de fotos en el fondo" />
+<Photo :custom-breakpoints="['sm', 'xl']" name="pantalla_con_galeria.jpg" alt="Unas manos sujetan una fotografía de 20x30 en el primer plano mientras se aprecia una pantalla con una galería de fotos en el fondo" />
 
 Fotografía de [RawPixel](https://unsplash.com/photos/xi9d8YSLNo4)
 
@@ -27,7 +27,7 @@ La tecnología hoy en día permite aglutinar **millones de píxeles en sensores 
 
 Con independencia del tipo de sensor que elijamos (como he comentado en [este artículo](https://www.anabelbarrio.com/2009/05/el-sensor-de-las-camaras-digitales/) existen implementaciones muy buenas en todas las tecnologías) y del tipo de cámara del que hablemos (móvil, reflex, mirrorless), lo que va a dar calidad a las fotos no son los megapíxeles del sensor, sino la calidad del equipo en su conjunto, y sobre todo, **la calidad de su lente**.
 
-<Photo name="diafragma_cerrado" alt="Detalle del diafragma cerrado de un objetivo" />
+<Photo name="diafragma_cerrado.jpg" alt="Detalle del diafragma cerrado de un objetivo" />
 
 Fotografía de [ShareGrid](https://unsplash.com/photos/7IBigEuL9Tw)
 

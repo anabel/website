@@ -1,3 +1,5 @@
+const path = require("path");
+
 module.exports = {
   title: "Anabel Barrio",
   description: "A vuepress blog that uses tailwind",
@@ -6,5 +8,12 @@ module.exports = {
   },
   markdown: {
     anchor: { permalink: false }
+  },
+  configureWebpack: {
+    resolve: {
+      alias: {
+        "@images": path.resolve(__dirname, "../blog/images")
+      }
+    }
   }
 };
