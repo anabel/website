@@ -12,6 +12,16 @@ export default ({
     };
   }
 
+  function loadMediaQueries(screens) {
+    let mediaQueries = new Map();
+    for (const key in screens) {
+      if (screens.hasOwnProperty(key)) {
+        mediaQueries.set(key, screens[key]);
+      }
+    }
+    Vue.prototype.$mediaQueries = mediaQueries;
+  }
+
   router.addRoutes([
     {
       path: "/posts/:page",
@@ -19,4 +29,8 @@ export default ({
       props: PageToNumber
     }
   ]);
+
+  import("tailwindcss/defaultConfig").then(config => {
+    loadMediaQueries(config.theme.screens);
+  });
 };

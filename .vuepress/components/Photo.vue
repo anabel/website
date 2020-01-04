@@ -1,5 +1,5 @@
 <template>
-  <picture>
+  <picture v-if="breakpoints">
     <source
       v-for="breakpoint in this.breakpoints"
       :srcset="getImageUrl(src(breakpoint))"
@@ -7,6 +7,7 @@
     />
     <img :src="getImageUrl(this.name)" :alt="this.alt" />
   </picture>
+  <img v-else :src="getImageUrl(this.name)" :alt="this.alt" />
 </template>
 
 <script>
@@ -15,13 +16,6 @@ const separator = ".";
 
 export default {
   name: "photo",
-  data() {
-    return {
-      mediaQueries: {
-        type: Object
-      }
-    };
-  },
   props: {
     name: {
       type: String,
@@ -30,28 +24,16 @@ export default {
     alt: {
       type: String
     },
-    customBreakpoints: {
+    breakpoints: {
       type: Array
-    }
-  },
-  computed: {
-    defaultBreakpoints() {
-      return Object.keys(this.mediaQueries);
-    },
-    breakpoints() {
-      if (this.customBreakpoints) {
-        return this.customBreakpoints;
-      }
-      return this.defaultBreakpoints;
     }
   },
   methods: {
     media(breakpoint) {
-      let viewport = this.mediaQueries[breakpoint];
       return "("
         .concat(mediaCondition)
         .concat(": ")
-        .concat(viewport)
+        .concat(this.$mediaQueries.get(breakpoint))
         .concat(")");
     },
     src(breakpoint) {
@@ -69,11 +51,6 @@ export default {
         return require("@images/" + filename);
       } catch (error) {}
     }
-  },
-  created() {
-    import("tailwindcss/defaultConfig").then(config => {
-      this.mediaQueries = config.theme.screens;
-    });
   }
 };
 </script>
