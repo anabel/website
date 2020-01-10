@@ -15,7 +15,7 @@ Hoy en día vivimos una verdadera maratón de megapíxeles en el mercado de las 
 
 Cuantos más píxeles tenga un sensor, más alta será su resolución. En [wikipedia](https://en.wikipedia.org/wiki/Pixel#/media/File:Sensorauflösungen.svg) tenéis un gráfico con algunas de las más comunes.
 
-<Photo :custom-breakpoints="['sm', 'xl']" name="pantalla_con_galeria.jpg" alt="Unas manos sujetan una fotografía de 20x30 en el primer plano mientras se aprecia una pantalla con una galería de fotos en el fondo" />
+<Photo :breakpoints="['sm', 'xl']" name="pantalla_con_galeria.jpg" alt="Unas manos sujetan una fotografía de 20x30 en el primer plano mientras se aprecia una pantalla con una galería de fotos en el fondo" />
 
 Fotografía de [RawPixel](https://unsplash.com/photos/xi9d8YSLNo4)
 
