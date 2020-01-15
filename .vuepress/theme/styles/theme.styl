@@ -1,17 +1,16 @@
 @tailwind base;
 
-@import url("https://p.typekit.net/p.css?s=1&k=rdi0rol&ht=tk&f=25244.25249.25250.25646&a=1506269&app=typekit&e=css");
-
+@import url("https://p.typekit.net/p.css?s=1&k=rdi0rol&ht=tk&f=15705.25646&a=1506269&app=typekit&e=css");
 @font-face {
 font-family:"freight-neo-pro";
-src:url("https://use.typekit.net/af/54d47a/000000000000000000017750/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"),url("https://use.typekit.net/af/54d47a/000000000000000000017750/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"),url("https://use.typekit.net/af/54d47a/000000000000000000017750/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
+src:url("https://use.typekit.net/af/54d47a/000000000000000000017750/27/l?primer=8fa4b058e82492e04d7cdf52b0e62c529469bc2a019e2b65c17d5e267ca91b8d&fvd=n4&v=3") format("woff2"),url("https://use.typekit.net/af/54d47a/000000000000000000017750/27/d?primer=8fa4b058e82492e04d7cdf52b0e62c529469bc2a019e2b65c17d5e267ca91b8d&fvd=n4&v=3") format("woff"),url("https://use.typekit.net/af/54d47a/000000000000000000017750/27/a?primer=8fa4b058e82492e04d7cdf52b0e62c529469bc2a019e2b65c17d5e267ca91b8d&fvd=n4&v=3") format("opentype");
 font-display:auto;font-style:normal;font-weight:400;
 }
 
 @font-face {
-font-family:"bookmania";
-src:url("https://use.typekit.net/af/38d017/00000000000000003b9b092b/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n6&v=3") format("woff2"),url("https://use.typekit.net/af/38d017/00000000000000003b9b092b/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n6&v=3") format("woff"),url("https://use.typekit.net/af/38d017/00000000000000003b9b092b/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n6&v=3") format("opentype");
-font-display:auto;font-style:normal;font-weight:600;
+font-family:"lato";
+src:url("https://use.typekit.net/af/220823/000000000000000000015231/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff2"),url("https://use.typekit.net/af/220823/000000000000000000015231/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff"),url("https://use.typekit.net/af/220823/000000000000000000015231/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("opentype");
+font-display:auto;font-style:normal;font-weight:700;
 }
 
 .title {
@@ -35,23 +34,23 @@ p strong {
 }
 
 h1 {
-   @apply title text-2xl mt-10 mb-2;
+   @apply title text-gray-600 text-xl mt-10 mb-2;
 }
 
 h2 {
-   @apply title text-xl;
-}
-
-h3, h4 {
    @apply title text-lg;
 }
 
-html {
-  @apply paragraph text-base;
+h3, h4 {
+   @apply title text-base;
 }
 
-body {
-  @apply mx-auto w-5/6;
+html {
+  @apply paragraph text-sm;
+}
+
+.main-content {
+    @apply min-w-0 max-w-sm mx-auto;
 }
 
 p {
@@ -62,10 +61,6 @@ h2, h3, h4, .btn {
   @apply mt-3 mb-1;
 }
 
-
-
-
-
 @tailwind components;
 
 @screen sm {
@@ -73,12 +68,28 @@ h2, h3, h4, .btn {
     @apply mt-12 mb-4;
   }
 
+  h1 {
+   @apply title text-2xl mt-10 mb-2;
+  }
+
+  h2 {
+    @apply title text-xl;
+  }
+
+  h3, h4 {
+    @apply title text-lg;
+  }
+
+  html {
+    @apply paragraph text-base;
+  }
+
   h2, h3, h4 {
     @apply mt-4 mb-2;
   }
 
   .main-content {
-    @apply max-w-lg mx-auto;
+    @apply max-w-md mx-auto;
   }
 }
 
@@ -101,6 +112,51 @@ h2, h3, h4, .btn {
 
   .main-content {
     @apply max-w-xl mx-auto;
+  }
+}
+
+@screen lg {
+
+  h1 {
+    @apply text-3xl;
+  }
+
+  h2 {
+    @apply text-2xl;
+  }
+
+  h3, h4 {
+    @apply text-xl;
+  }
+
+  html {
+    @apply text-lg;
+  }
+
+  .main-content {
+    @apply max-w-2xl mx-auto;
+  }
+}
+
+@screen xl {
+  h1 {
+    @apply text-3xl;
+  }
+
+  h2 {
+    @apply text-2xl;
+  }
+
+  h3, h4 {
+    @apply text-xl;
+  }
+
+  html {
+    @apply text-lg;
+  }
+
+  .main-content {
+    @apply max-w-3xl mx-auto;
   }
 }
 
