@@ -68,15 +68,20 @@ export default {
       const mediaFeature = "width";
       let mediaCondition = [];
       for (const condition in mediaQuery) {
-        let media = [];
+        let media;
         if (mediaQuery.hasOwnProperty(condition)) {
-          media.push(condition.concat("-").concat(mediaFeature));
           let value = mediaQuery[condition];
-          media.push(value);
+          media = "("
+            .concat(condition)
+            .concat("-")
+            .concat(mediaFeature)
+            .concat(": ")
+            .concat(value)
+            .concat(")");
         }
-        mediaCondition.push(media.join(": "));
+        mediaCondition.push(media);
       }
-      return "(".concat(mediaCondition.join(", ")).concat(")");
+      return mediaCondition.join(" and ");
     }
   }
 };
