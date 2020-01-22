@@ -46,7 +46,7 @@ h3, h4 {
 }
 
 html {
-  @apply paragraph text-sm;
+  @apply paragraph text-sm mb-10;
 }
 
 .main-content {
@@ -134,7 +134,7 @@ h2, h3, h4, .btn {
   }
 
   .main-content {
-    @apply max-w-2xl mx-auto;
+    @apply max-w-xl mx-auto;
   }
 }
 
@@ -156,8 +156,29 @@ h2, h3, h4, .btn {
   }
 
   .main-content {
-    @apply max-w-3xl mx-auto;
+    @apply max-w-xl mx-auto;
   }
+}
+
+blockquote {
+  background: #f9f9f9;
+  border-left: 10px solid #718096;
+  margin: 1.5em 0;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+}
+
+blockquote:before {
+  color: #718096;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+
+blockquote p {
+  display: inline;
 }
 
 @tailwind utilities;

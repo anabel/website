@@ -13,7 +13,8 @@ module.exports = {
   configureWebpack: {
     resolve: {
       alias: {
-        "@images": path.resolve(__dirname, "../blog/images")
+        "@images": path.resolve(__dirname, "../blog/images"),
+        "@videos": path.resolve(__dirname, "../blog/videos")
       }
     }
   },
