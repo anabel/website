@@ -9,7 +9,7 @@ export default {
   },
   data() {
     return {
-      pageSize: 2
+      pageSize: 3
     };
   },
   computed: {
@@ -30,9 +30,18 @@ export default {
 </script>
 
 <template>
-  <div>
-    <Posts :posts="this.posts" :page="this.page" :page-size="this.pageSize" />
-    <Pagination :number-of-items="this.posts.length" :page-size="this.pageSize" :page="this.page" />
+  <div class="main-content">
+    <div>
+      <h1>Anabel Barrio</h1>
+    </div>
+    <div>
+      <Posts :posts="this.posts" :page="this.page" :page-size="this.pageSize" />
+      <Pagination
+        :number-of-items="this.posts.length"
+        :page-size="this.pageSize"
+        :page="this.page"
+      />
+    </div>
   </div>
 </template>
 
