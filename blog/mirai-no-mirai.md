@@ -3,13 +3,12 @@ title: Mirai no mirai
 date: 2019-03-19 20:34
 layout: Post
 tags: ["cine", "opinión"]
+excerpt: Comentarios sobre la película de animación.
 ---
 
 # Mirai no Mirai
 
 La última película de Mamoru Hosoda es una historia en la que se navega de forma fluída entre costumbrismo y la más pura fantasía. Consiste en una narración muy natural que se va haciendo más profunda, capa a capa. Desde la sencillez de la vida cotidiana, su fondo va cargándose de emociones para finalmente transcender a reflexiones universales.
-
-<!-- more -->
 
 <Photo name="mirai_no_mirai.jpg" />
 

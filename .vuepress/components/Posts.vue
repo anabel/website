@@ -1,13 +1,8 @@
 <template>
-  <ul class="flex-1 max-w-xl mx-auto leading-normal">
-    <li v-for="post in postsOfPage">
-      <div v-html="post.excerpt"></div>
-      <p
-        class="metadata"
-      >{{ publishDate(post.frontmatter.date) }} / {{ tags(post.frontmatter.tags) }}</p>
-      <a class="btn inline-block" :href="post.path">Seguir leyendo</a>
-    </li>
-  </ul>
+  <section>
+    <Post-meta v-for="post in postsOfPage" :post="post" />
+    <Pagination :number-of-items="this.posts.length" :page-size="this.pageSize" :page="this.page" />
+  </section>
 </template>
 
 <script>
@@ -22,7 +17,7 @@ export default {
     },
     pageSize: {
       type: Number,
-      default: 10
+      default: 4
     }
   },
   computed: {
@@ -30,16 +25,6 @@ export default {
       let s = this.pageSize * (this.page - 1);
       let e = this.pageSize * this.page;
       return this.posts.slice(s, e); //slice does not include end [start, end)
-    }
-  },
-  methods: {
-    publishDate(date) {
-      const moment = require("moment");
-      moment.locale("es-ES");
-      return moment(date).format("LLLL");
-    },
-    tags(tags) {
-      return tags.toString();
     }
   }
 };

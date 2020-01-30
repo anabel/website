@@ -3,6 +3,7 @@ title: La cámara Réflex
 date: 2009-04-10 09:00:00
 layout: Post
 tags: "equipo fotográfico"
+excerpt: Describo las principales ventajas que tiene una cámara réflex para hacer fotos y qué opciones creativas da.
 ---
 
 # La cámara réflex
@@ -12,8 +13,6 @@ La fotografía, en contra de lo que pueda parecer, no es un medio objetivo.
 El que mira elige qué encuadra, y que queda fuera de la fotografía al disparar. La cámara es una herramienta que se usa muchas veces para construir una imagen, bien a partir de una idea o simplemente para expresar nuestra percepción.
 
 Pero sea cual sea nuestra intención, es imprescindible dedicar algo de tiempo a conocerla si queremos sacarle el máximo partido.
-
-<!-- more -->
 
 <Photo :breakpoints="['sm', 'md', 'lg']" name="polaroid_sobre_paisaje.jpg" alt="Una mano sujeta una polaroid recién tomada frente a un paisaje" />
 

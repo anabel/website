@@ -3,13 +3,12 @@ title: Unboxing life is strange
 date: 2016-04-23 10:23
 layout: Post
 tags: ["videojuegos", "opinión"]
+excerpt: Comentarios sobre el primer videojuego Life is strange e imágenes de su edición coleccionista.
 ---
 
 # Unboxing Life is Strange
 
 En un principio Life is Strange salió únicamente en versión digital y se fue publicando por capítulos. Por entonces ya le tenía echado el ojo así que al ver que había salido el formato físico en edición limitada fui de las primeras en hacerme con uno.
-
-<!-- more -->
 
 <video title="trailer del juego life is strange edición limitada" controls>
   <source src="~@videos/life-is-strange-trailer-edicion-limitada.mp4" type="video/mp4">

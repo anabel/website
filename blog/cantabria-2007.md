@@ -3,11 +3,10 @@ title: Fotografía - Modelar la luz
 date: 2018-10-29 10:05
 layout: Post
 tags: ["opinión", "fotodiario", "fotografía"]
+excerpt: Fotografiar es atrapar algo tan efímero como un instante. Es ganar una pequeña batalla al reloj, condensando el tiempo en algo tangible, corpóreo, que tiene entidad.
 ---
 
 # Cantabria 2007
-
-<!-- more -->
 
 <div class="flex flex-wrap max-w-xl mx-auto justify-center">
 

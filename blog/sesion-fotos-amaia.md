@@ -3,6 +3,7 @@ title: Sesión de fotos con Amaia
 date: 2018-12-06 10:13
 layout: Post
 tags: ["sesiones", "retrato", "fotografía"]
+excerpt: Galería de imágenes de la sesión de retrato que le hice a Amaia.
 ---
 
 # Sesión de fotos con Amaia
@@ -10,8 +11,6 @@ tags: ["sesiones", "retrato", "fotografía"]
 Hay veces que no hace falta mucha más excusa que las ganas de divertirse para hacer fotos. Hacía tiempo que Amaia y yo habíamos hablado de hacer una sesión de esas de muchas risas y buena conversación a partes iguales, de esas que después reflejen cómo era un momento importante de tu vida; ese que vives hoy.
 
 Y creo que no podríamos haberlo hecho mejor 🙂
-
-<!-- more -->
 
 <div class="flex flex-wrap">
 <Photo class="w-full" name="amaia_2.jpg" />

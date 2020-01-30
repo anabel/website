@@ -3,6 +3,7 @@ title: Fotografía - Modelar la luz
 date: 2018-10-20 11:10
 layout: Post
 tags: ["opinión", "autores"]
+excerpt: Un repaso a los comienzos de la fotografía partiendo de la etimología del propio término.
 ---
 
 # Fotografía: Modelar la luz
@@ -10,8 +11,6 @@ tags: ["opinión", "autores"]
 <blockquote>La fotografía (de <i>foto-</i>y<i>-grafía</i>)<sup id="cite_ref-RAE_2-0" class="reference separada"><a href="https://es.wikipedia.org/wiki/Fotograf%C3%ADa#cite_note-RAE-2">2</a></sup> es el <a title="Arte" href="https://es.wikipedia.org/wiki/Arte#Disciplinas_art.C3.ADsticas">arte</a>y la <a title="Técnica" href="https://es.wikipedia.org/wiki/T%C3%A9cnica">técnica</a> de obtener imágenes duraderas debido a la acción de la<a title="Luz" href="https://es.wikipedia.org/wiki/Luz">luz</a>.<sup id="cite_ref-RAE_2-1" class="reference separada"><a href="https://es.wikipedia.org/wiki/Fotograf%C3%ADa#cite_note-RAE-2">2</a></sup></blockquote>
 
 Así define wikipedia la fotografía. Su etimología tiene bastante encanto, viene del griego y quiere decir algo así como **pintar con luz**.
-
-<!-- more -->
 
 ## La cámara oscura
 
