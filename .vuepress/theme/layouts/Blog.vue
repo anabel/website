@@ -31,9 +31,9 @@ export default {
 
 <template>
   <div class="main-content">
-    <div>
+    <header class="flex inline-flex">
       <h1>Anabel Barrio</h1>
-    </div>
+    </header>
     <div>
       <Posts :posts="this.posts" :page="this.page" :page-size="this.pageSize" />
       <Pagination
@@ -46,5 +46,5 @@ export default {
 </template>
 
 <style lang="stylus">
-@import '../styles/theme.styl';
+@import '../styles/index.styl';
 </style>

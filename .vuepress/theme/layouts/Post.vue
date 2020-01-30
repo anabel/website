@@ -1,8 +1,8 @@
 <template>
-    <section class="main-content">
-        <Content/>
-    </section>
+  <section class="main-content">
+    <Content />
+  </section>
 </template>
 <style lang="stylus">
-@import '../styles/theme.styl';
+@import '../styles/index.styl';
 </style>
