@@ -53,8 +53,4 @@ export default {
 
 <style lang="stylus" scoped>
 @import '../theme/styles/index.styl';
-
-a {
-  @apply: text-white;
-}
 </style>>
