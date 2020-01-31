@@ -16,8 +16,7 @@ export default {
       type: Number
     },
     pageSize: {
-      type: Number,
-      default: 4
+      type: Number
     }
   },
   computed: {

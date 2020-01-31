@@ -39,48 +39,22 @@ export default {
 </script>
 
 <template>
-  <ul class="flex-1 max-w-xl mx-auto leading-normal mt-10">
-    <li>
-      <span v-if="hasPrevious" class="link text">
-        <router-link :to="{path: '/posts/' + this.previous}">Anterior</router-link>
-      </span>
-      <span v-else class="link text unactive">Anterior</span>
-    </li>
-    <li v-for="page in pageCount">
-      <span v-if="isPage(page)" class="selected number">{{page}}</span>
-      <span v-else class="link number">
-        <router-link :to="{path: '/posts/' + page}">{{page}}</router-link>
-      </span>
-    </li>
-    <li>
-      <span v-if="hasNext" class="link">
-        <router-link :to="{path: '/posts/' + this.next}">Siguiente</router-link>
-      </span>
-      <span v-else class="link unactive">Siguiente</span>
-    </li>
-  </ul>
+  <nav>
+    <span v-if="hasPrevious" class="btn float-left">
+      <router-link :to="{path: '/posts/' + this.previous}">Anterior</router-link>
+    </span>
+    <span v-else class="btn unactive float-left">Anterior</span>
+    <span v-if="hasNext" class="btn float-right">
+      <router-link :to="{path: '/posts/' + this.next}">Siguiente</router-link>
+    </span>
+    <span v-else class="btn unactive float-right">Siguiente</span>
+  </nav>
 </template>
 
 <style lang="stylus" scoped>
 @import '../theme/styles/index.styl';
 
-ul {
-  font-size: 0;
-}
-
-.link {
-  @apply: text-gray-600 py-2 px-3 border border-gray-600;
-}
-
-.selected {
-  @apply: btn py-2 px-3 border border-gray-600;
-}
-
-.link.unactive {
-  @apply: text-gray-500 border-gray-500;
-}
-
-li {
-  @apply: inline text-sm font-sans;
+a {
+  @apply: text-white;
 }
 </style>>

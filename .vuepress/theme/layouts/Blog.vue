@@ -9,7 +9,7 @@ export default {
   },
   data() {
     return {
-      pageSize: 3
+      pageSize: 5
     };
   },
   computed: {

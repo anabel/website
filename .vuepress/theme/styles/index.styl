@@ -13,6 +13,12 @@ src:url("https://use.typekit.net/af/220823/000000000000000000015231/27/l?primer=
 font-display:auto;font-style:normal;font-weight:700;
 }
 
+@font-face {
+font-family:"lato-regular";
+src:url("https://use.typekit.net/af/180254/00000000000000000001522c/27/l?primer=8fa4b058e82492e04d7cdf52b0e62c529469bc2a019e2b65c17d5e267ca91b8d&fvd=n4&v=3") format("woff2"),url("https://use.typekit.net/af/180254/00000000000000000001522c/27/d?primer=8fa4b058e82492e04d7cdf52b0e62c529469bc2a019e2b65c17d5e267ca91b8d&fvd=n4&v=3") format("woff"),url("https://use.typekit.net/af/180254/00000000000000000001522c/27/a?primer=8fa4b058e82492e04d7cdf52b0e62c529469bc2a019e2b65c17d5e267ca91b8d&fvd=n4&v=3") format("opentype");
+font-display:auto;font-style:normal;font-weight:400;
+}
+
 .title {
   @apply text-gray-600 font-header;
 }
@@ -22,11 +28,15 @@ font-display:auto;font-style:normal;font-weight:700;
 }
 
 .metadata {
-  @apply text-gray-600;
+  @apply text-gray-600 text-sm;
 }
 
 .btn {
-  @apply text-white py-2 px-3 bg-gray-600;
+  @apply text-white py-2 px-3 bg-gray-600 font-sans text-sm;
+}
+
+.btn.unactive {
+  @apply bg-gray-500;
 }
 
 p strong {
@@ -46,7 +56,7 @@ h3, h4 {
 }
 
 a {
-  @apply text-gray-600
+  @apply text-gray-600;
 }
 
 body {
@@ -61,7 +71,7 @@ p {
   @apply mt-1 mb-2;
 }
 
-h2, h3, h4, .btn {
+h2, h3, h4, .btn, nav {
   @apply mt-3 mb-1;
 }
 
@@ -86,6 +96,10 @@ h2, h3, h4, .btn {
 
   body {
     @apply paragraph text-base;
+  }
+
+  .metadata, .btn {
+    @apply text-base;
   }
 
   h2, h3, h4 {
@@ -114,6 +128,10 @@ h2, h3, h4, .btn {
     @apply text-lg;
   }
 
+  .metadata, .btn {
+    @apply text-base;
+  }
+
   .main-content {
     @apply max-w-xl mx-auto;
   }
@@ -137,6 +155,10 @@ h2, h3, h4, .btn {
     @apply text-lg;
   }
 
+  .metadata, .btn {
+    @apply text-base;
+  }
+
   .main-content {
     @apply max-w-xl mx-auto;
   }
@@ -157,6 +179,10 @@ h2, h3, h4, .btn {
 
   body {
     @apply text-lg;
+  }
+
+  .metadata, .btn {
+    @apply text-base;
   }
 
   .main-content {

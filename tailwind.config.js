@@ -31,7 +31,7 @@ module.exports = {
         '"Noto Color Emoji"'
       ],
       sans: [
-        "lato",
+        "lato-regular",
         "-apple-system",
         "BlinkMacSystemFont",
         '"Segoe UI"',
