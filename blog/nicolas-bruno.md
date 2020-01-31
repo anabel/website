@@ -3,13 +3,12 @@ title: Nicolas Bruno
 date: 2014-03-15 10:43
 layout: Post
 tags: ["opinión", "autores"]
+excerpt: Comentarios y análisis de la obra de Nicolas Bruno, un joven autor conceptual con un estilo narrativo bastante particular.
 ---
 
 # Nicolas Bruno
 
 Esta semana me ha llamado la atención un [artículo](http://www.latercera.com/noticia/tendencias/2014/02/659-566900-9-fotografo-que-sufre-de-paralisis-del-sueno-retrata-sus-visiones-en-imagenes.shtml) de un artista llamado **Nicolas Bruno**.
-
-<!-- more -->
 
 <Photo name="nicolas_bruno_mesa_ojos_vendados.jpg" alt="Un chico con los ojos vendados sentado a la mesa mientras una silla en llamas es lanzada hacia él" />
 

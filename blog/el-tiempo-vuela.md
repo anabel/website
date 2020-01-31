@@ -3,6 +3,7 @@ title: El tiempo vuela
 date: 2014-12-24 10:35
 layout: Post
 tags: ["conceptual", "opinión", "fotomontaje"]
+excerpt: Hay citas y refranes para todo tipo de situaciones. Hay citas y refranes que se contradicen entre sí. En el fondo, a veces, lo importante no es encontrar la mejor forma de decir las cosas, sino encontrar el valor de decirlas.
 ---
 
 # El tiempo vuela
@@ -11,13 +12,11 @@ Hace unos días me encontré por la red con esta frase, bastante conocida:
 
 > La felicidad es como una mariposa. Cuanto más la persigues, más huye. Pero si centras tu atención en otras cosas, vendrá y se acabará posando en tu hombro.
 
-<!-- more -->
-
 <video title="Dos mariposas aletean persiguiéndose la una a la otra" controls>
   <source src="~@videos/persiguiendo_mariposas.mp4" type="video/mp4">
 </video>
 
-No estoy muy de acuerdo todo esto, señor Frankl… pero no voy a discutir sobre el significado de la vida con el autor de el hombre en busca de sentido.
+No estoy muy de acuerdo todo esto, señor Frankl… pero no voy a discutir sobre el significado de la vida con el autor de _el hombre en busca de sentido_.
 
 Solo diré que a mí me encaja mucho más esta otra cita de John Lennon:
 

@@ -34,14 +34,7 @@ export default {
     <header class="flex inline-flex">
       <h1>Anabel Barrio</h1>
     </header>
-    <div>
-      <Posts :posts="this.posts" :page="this.page" :page-size="this.pageSize" />
-      <Pagination
-        :number-of-items="this.posts.length"
-        :page-size="this.pageSize"
-        :page="this.page"
-      />
-    </div>
+    <Posts :posts="this.posts" :page="this.page" :page-size="this.pageSize" />
   </div>
 </template>
 

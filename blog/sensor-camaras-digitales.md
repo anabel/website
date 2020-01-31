@@ -3,13 +3,12 @@ title: El sensor de las cámaras digitales
 date: 2009-05-17 10:20:00
 layout: Post
 tags: "equipo fotográfico"
+excerpt: Describo qué es el sensor de una cámara digital, cómo funciona y comparo algunas opciones del mercado.
 ---
 
 # El sensor de las cámaras digitales
 
 El sensor de las cámaras fotográficas es un chip que contiene millones de células fotosensibles (semiconductores de silicio) que, estructuradas en forma de matriz, **transforman la intensidad de luz en carga eléctrica**. Cada una de estas células o la interpolación de varias -dependiendo del tipo de sensor- da valor a un [píxel](http://es.wikipedia.org/wiki/Píxel).
-
-<!-- more -->
 
 <Photo name="lupa_sobre_foto_muestra_pixeles.jpg" alt="Una mano sujeta una lupa que muestra simbólicamente los píxeles de una fotografía de paisaje" />
 

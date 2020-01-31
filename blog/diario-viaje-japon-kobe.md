@@ -3,13 +3,12 @@ title: Diario del viaje a Japón - Kobe
 date: 2015-08-02 10:35
 layout: Post
 tags: ["viajes", "fotografía"]
+excerpt: Repaso a la primera etapa del viaje a Japón. 12 horas de vuelo con un trasbordo corto en Charles de Gaulle para llegar finalmente a Osaka, desde donde visitamos Kobe.
 ---
 
 # Diario del viaje a Japón: Kobe
 
 Salimos dirección Kansai preparados para el viaje más largo que habíamos hecho nunca. Por delante teníamos 12 horas de vuelo, a los que se sumaría una corta escala en Charles de Gaulle y un trayecto en taxi desde Osaka para finalmente llegar a nuestro primer destino, Kobe.
-
-<!-- more -->
 
 <Photo name="aeropuerto_charles_de_gaulle.jpg" alt="Nuestra puerta de embarque en Charles de Gaulle" />
 
