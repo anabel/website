@@ -4,6 +4,16 @@ const tailwindConfig = require("../tailwind.config");
 module.exports = {
   title: "Anabel Barrio",
   description: "A vuepress blog that uses tailwind",
+  themeConfig: {
+    nav: [
+      { text: "Artículos", link: "/" },
+      { text: "Sobre mí", link: "/about" },
+      {
+        text: "GitHub",
+        link: "https://github.com/anabel/vuewind"
+      }
+    ]
+  },
   postcss: {
     plugins: [require("tailwindcss"), require("autoprefixer")]
   },

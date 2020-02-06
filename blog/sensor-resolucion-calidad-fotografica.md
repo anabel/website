@@ -1,7 +1,6 @@
 ---
 title: Sensor, resolución y calidad fotográfica
 date: 2009-05-25 18:13:00
-layout: Post
 tags: ["equipo fotográfico", "opinión"]
 excerpt: ¿Qué relación hay entre el tamaño del sensor y su calidad? Algunas notas sobre por qué los megapíxeles no son tan importantes.
 ---

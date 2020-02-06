@@ -39,7 +39,7 @@ export default {
 </script>
 
 <template>
-  <nav>
+  <nav class="pagination">
     <span v-if="hasPrevious" class="btn float-left">
       <router-link :to="{path: '/posts/' + this.previous}">Anterior</router-link>
     </span>
@@ -53,4 +53,4 @@ export default {
 
 <style lang="stylus" scoped>
 @import '../theme/styles/index.styl';
-</style>>
+</style>
