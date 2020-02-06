@@ -4,6 +4,7 @@ const tailwindConfig = require("../tailwind.config");
 module.exports = {
   title: "Anabel Barrio",
   description: "A vuepress blog that uses tailwind",
+  head: [["link", { rel: "icon", href: "/logo.png" }]],
   themeConfig: {
     nav: [
       { text: "Artículos", link: "/" },
