@@ -1,7 +1,6 @@
 ---
 title: La cámara Réflex
 date: 2009-04-10 09:00:00
-layout: Post
 tags: "equipo fotográfico"
 excerpt: Describo las principales ventajas que tiene una cámara réflex para hacer fotos y qué opciones creativas da.
 ---

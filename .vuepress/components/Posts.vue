@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section class="theme-default-content">
     <Post-meta v-for="post in postsOfPage" :post="post" />
     <Pagination :number-of-items="this.posts.length" :page-size="this.pageSize" :page="this.page" />
   </section>

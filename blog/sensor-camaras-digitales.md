@@ -1,7 +1,6 @@
 ---
 title: El sensor de las cámaras digitales
 date: 2009-05-17 10:20:00
-layout: Post
 tags: "equipo fotográfico"
 excerpt: Describo qué es el sensor de una cámara digital, cómo funciona y comparo algunas opciones del mercado.
 ---

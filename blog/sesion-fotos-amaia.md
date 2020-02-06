@@ -1,7 +1,6 @@
 ---
 title: Sesión de fotos con Amaia
 date: 2018-12-06 10:13
-layout: Post
 tags: ["sesiones", "retrato", "fotografía"]
 excerpt: Galería de imágenes de la sesión de retrato que le hice a Amaia.
 ---
