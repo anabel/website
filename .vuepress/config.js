@@ -6,6 +6,7 @@ module.exports = {
   description: "A vuepress blog that uses tailwind",
   head: [["link", { rel: "icon", href: "/logo.png" }]],
   themeConfig: {
+    sidebar: "auto",
     nav: [
       { text: "Artículos", link: "/" },
       { text: "Sobre mí", link: "/about" },

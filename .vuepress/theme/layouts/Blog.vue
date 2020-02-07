@@ -13,9 +13,6 @@
       <template #top>
         <slot name="sidebar-top" />
       </template>
-      <template #bottom>
-        <slot name="sidebar-bottom" />
-      </template>
     </Sidebar>
 
     <Posts :posts="this.posts" :page="this.page" :page-size="this.pageSize" />
@@ -64,15 +61,6 @@ export default {
       );
     },
 
-    shouldShowSidebar() {
-      const { frontmatter } = this.$page;
-      return (
-        !frontmatter.home &&
-        frontmatter.sidebar !== false &&
-        this.sidebarItems.length
-      );
-    },
-
     sidebarItems() {
       return resolveSidebarItems(
         this.$page,
@@ -88,7 +76,7 @@ export default {
         {
           "no-navbar": !this.shouldShowNavbar,
           "sidebar-open": this.isSidebarOpen,
-          "no-sidebar": !this.shouldShowSidebar
+          "no-sidebar": true
         },
         userPageClass
       ];

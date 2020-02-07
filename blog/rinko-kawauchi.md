@@ -1,6 +1,7 @@
 ---
 title: Rinko Kawauchi - Poesía visual
 date: 2016-04-16 18:45
+sidebar: false
 tags: ["autores", "opinión"]
 excerpt: Comentarios sobre la autora Rinko Kawauchi, una fotógrafa japones contemporánea centrada en el encanto de lo cotidiano.
 ---
