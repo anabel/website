@@ -1,6 +1,7 @@
 ---
 title: El tiempo vuela
 date: 2014-12-24 10:35
+sidebar: false
 tags: ["conceptual", "opinión", "fotomontaje"]
 excerpt: Hay citas y refranes para todo tipo de situaciones. Hay citas y refranes que se contradicen entre sí. En el fondo, a veces, lo importante no es encontrar la mejor forma de decir las cosas, sino encontrar el valor de decirlas.
 ---
