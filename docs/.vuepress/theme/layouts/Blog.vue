@@ -124,7 +124,7 @@ export default {
     },
 
     isAPost(page) {
-      return page.path.startsWith("/blog/") && page.frontmatter.date;
+      return page.path.startsWith("/blog/") && !! page.frontmatter.date;
     }
   }
 };
