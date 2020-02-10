@@ -1,5 +1,5 @@
 const path = require("path");
-const tailwindConfig = require("../tailwind.config");
+const tailwindConfig = require("./tailwind.config");
 
 module.exports = {
   title: "Anabel Barrio",
@@ -17,7 +17,10 @@ module.exports = {
     ]
   },
   postcss: {
-    plugins: [require("tailwindcss"), require("autoprefixer")]
+    plugins: [
+      require("tailwindcss")(path.resolve(__dirname, "./tailwind.config.js")),
+      require("autoprefixer")
+    ]
   },
   markdown: {
     anchor: { permalink: false }

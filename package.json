@@ -7,8 +7,15 @@
   "author": "Anabel Barrio",
   "license": "MIT",
   "private": true,
+  "scripts": {
+    "dev": "vuepress dev docs",
+    "build": "vuepress build docs"
+  },
   "dependencies": {
     "moment": "^2.24.0",
     "tailwindcss": "^1.1.3"
+  },
+  "devDependencies": {
+    "vuepress": "^1.3.0"
   }
 }
