@@ -12,15 +12,15 @@ Hay veces que no hace falta mucha más excusa que las ganas de divertirse para h
 
 Y creo que no podríamos haberlo hecho mejor 🙂
 
-<div class="flex flex-wrap">
-<Photo class="w-full" name="amaia_2.jpg" />
-<Photo class="w-1/2" name="amaia_3.jpg" />
-<Photo class="w-1/2" name="amaia_1.jpg" />
-<Photo class="w-1/2" name="amaia_5.jpg" />
-<Photo class="w-1/2" name="amaia_6.jpg" />
-<Photo class="w-1/2" name="amaia_7.jpg" />
-<Photo class="w-1/2" name="amaia_8.jpg" />
-<Photo class="w-full" name="amaia_4.jpg" />
-<Photo class="w-1/2" name="amaia_9.jpg" />
-<Photo class="w-1/2" name="amaia_10.jpg"/>
+<div class="flex flex-col ">
+<Photo class="object-scale-down" name="amaia_2.jpg" />
+<Photo class="object-scale-down" name="amaia_3.jpg" />
+<Photo class="object-scale-down" name="amaia_1.jpg" />
+<Photo class="object-scale-down" name="amaia_5.jpg" />
+<Photo class="object-scale-down" name="amaia_6.jpg" />
+<Photo class="object-scale-down" name="amaia_7.jpg" />
+<Photo class="object-scale-down" name="amaia_8.jpg" />
+<Photo class="object-scale-down" name="amaia_4.jpg" />
+<Photo class="object-scale-down" name="amaia_9.jpg" />
+<Photo class="object-scale-down" name="amaia_10.jpg"/>
 </div>
