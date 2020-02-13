@@ -1,9 +1,11 @@
 <template>
   <div>
     <base-layout>
-      <Content />
-      <template v-if="this.showComments()" #bottom>
-        <Comments />
+      <template #content v-bind:showComments="this.showComments()">
+        <section class="theme-default-content">
+          <Content />
+          <Comments v-if="showComments" />
+        </section>
       </template>
     </base-layout>
   </div>

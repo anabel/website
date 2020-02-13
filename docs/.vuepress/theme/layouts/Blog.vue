@@ -1,28 +1,18 @@
 <template>
-  <div
-    class="theme-container"
-    :class="pageClasses"
-    @touchstart="onTouchStart"
-    @touchend="onTouchEnd"
-  >
-    <Navbar v-if="shouldShowNavbar" @toggle-sidebar="toggleSidebar" />
-
-    <div class="sidebar-mask" @click="toggleSidebar(false)" />
-
-    <Sidebar :items="sidebarItems" @toggle-sidebar="toggleSidebar">
-      <template #top>
-        <slot name="sidebar-top" />
-      </template>
-    </Sidebar>
-
-    <Posts :posts="this.posts" :page="this.page" :page-size="this.pageSize" />
-  </div>
+  <base-layout>
+    <template
+      #content
+      v-bind:posts="this.posts"
+      v-bind:page="this.page"
+      v-bind:pageSize="this.pageSize"
+    >
+      <Posts :posts="posts" :page="page" :page-size="pageSize" />
+    </template>
+  </base-layout>
 </template>
 
 <script>
-import Navbar from "@theme/components/Navbar.vue";
-import Sidebar from "@theme/components/Sidebar.vue";
-import { resolveSidebarItems } from "@parent-theme/util";
+import BaseLayout from "./BaseLayout.vue";
 
 export default {
   name: "Blog",
@@ -34,54 +24,16 @@ export default {
   },
 
   components: {
-    Sidebar,
-    Navbar
+    BaseLayout
   },
 
   data() {
     return {
-      isSidebarOpen: false,
       pageSize: 5
     };
   },
 
   computed: {
-    shouldShowNavbar() {
-      const { themeConfig } = this.$site;
-      const { frontmatter } = this.$page;
-      if (frontmatter.navbar === false || themeConfig.navbar === false) {
-        return false;
-      }
-      return (
-        this.$title ||
-        themeConfig.logo ||
-        themeConfig.repo ||
-        themeConfig.nav ||
-        this.$themeLocaleConfig.nav
-      );
-    },
-
-    sidebarItems() {
-      return resolveSidebarItems(
-        this.$page,
-        this.$page.regularPath,
-        this.$site,
-        this.$localePath
-      );
-    },
-
-    pageClasses() {
-      const userPageClass = this.$page.frontmatter.pageClass;
-      return [
-        {
-          "no-navbar": !this.shouldShowNavbar,
-          "sidebar-open": this.isSidebarOpen,
-          "no-sidebar": true
-        },
-        userPageClass
-      ];
-    },
-
     posts() {
       return this.$site.pages
         .filter(x => this.isAPost(x))
@@ -92,38 +44,7 @@ export default {
     }
   },
 
-  mounted() {
-    this.$router.afterEach(() => {
-      this.isSidebarOpen = false;
-    });
-  },
-
   methods: {
-    toggleSidebar(to) {
-      this.isSidebarOpen = typeof to === "boolean" ? to : !this.isSidebarOpen;
-      this.$emit("toggle-sidebar", this.isSidebarOpen);
-    },
-
-    // side swipe
-    onTouchStart(e) {
-      this.touchStart = {
-        x: e.changedTouches[0].clientX,
-        y: e.changedTouches[0].clientY
-      };
-    },
-
-    onTouchEnd(e) {
-      const dx = e.changedTouches[0].clientX - this.touchStart.x;
-      const dy = e.changedTouches[0].clientY - this.touchStart.y;
-      if (Math.abs(dx) > Math.abs(dy) && Math.abs(dx) > 40) {
-        if (dx > 0 && this.touchStart.x <= 80) {
-          this.toggleSidebar(true);
-        } else {
-          this.toggleSidebar(false);
-        }
-      }
-    },
-
     isAPost(page) {
       return page.path.startsWith("/blog/") && !!page.frontmatter.date;
     }

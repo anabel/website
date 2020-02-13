@@ -14,10 +14,7 @@
         <slot name="sidebar-top" />
       </template>
     </Sidebar>
-    <section class="theme-default-content">
-      <Content />
-      <slot name="bottom" />
-    </section>
+    <slot name="content" />
   </div>
 </template>
 

@@ -11,7 +11,6 @@ export default {
     var disqus_config = function() {
       this.page.identifier = that.$page.path; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
     };
-    console.log(this);
     (function() {
       // DON'T EDIT BELOW THIS LINE
       var d = document,
