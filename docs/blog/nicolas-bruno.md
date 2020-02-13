@@ -1,6 +1,7 @@
 ---
 title: Nicolas Bruno
 date: 2014-03-15
+layout: Post
 sidebar: false
 tags: ["opinión", "autores"]
 excerpt: Comentarios y análisis de la obra de Nicolas Bruno, un joven autor conceptual con un estilo narrativo bastante particular.
