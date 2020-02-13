@@ -1,6 +1,6 @@
 ---
 title: Algunos fotógrafos infantiles
-date: 2014-06-15 16:20
+date: 2014-06-15
 tags: ["opinión", "autores"]
 excerpt: A todos nos gustan las fotografías que nos cuentan historias, que nos atrapan por algo más que su impacto visual. Hoy traigo a varios fotógrafos que hacen a sus hijos protagonistas de las más disparatadas historias, o de las más increíbles escenas.
 ---

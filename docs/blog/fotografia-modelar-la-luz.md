@@ -1,6 +1,6 @@
 ---
 title: Fotografía - Modelar la luz
-date: 2018-10-20 11:10
+date: 2018-10-20
 tags: ["opinión", "autores"]
 excerpt: Un repaso a los comienzos de la fotografía partiendo de la etimología del propio término.
 ---

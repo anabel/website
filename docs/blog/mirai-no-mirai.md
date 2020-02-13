@@ -1,6 +1,6 @@
 ---
 title: Mirai no mirai
-date: 2019-03-19 20:34
+date: 2019-03-19
 sidebar: false
 tags: ["cine", "opinión"]
 excerpt: Comentarios sobre la película de animación.

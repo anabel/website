@@ -1,6 +1,6 @@
 ---
 title: Unboxing life is strange
-date: 2016-04-23 10:23
+date: 2016-04-23
 tags: ["videojuegos", "opinión"]
 excerpt: Comentarios sobre el primer videojuego Life is strange e imágenes de su edición coleccionista.
 ---
