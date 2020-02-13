@@ -86,7 +86,8 @@ export default {
       return this.$site.pages
         .filter(x => this.isAPost(x))
         .sort(
-          (a, b) => new Date(b.frontmatter.date) - new Date(a.frontmatter.date)
+          (a, b) =>
+            Date.parse(b.frontmatter.date) - Date.parse(a.frontmatter.date)
         );
     }
   },
@@ -124,7 +125,7 @@ export default {
     },
 
     isAPost(page) {
-      return page.path.startsWith("/blog/") && !! page.frontmatter.date;
+      return page.path.startsWith("/blog/") && !!page.frontmatter.date;
     }
   }
 };

@@ -1,6 +1,6 @@
 ---
 title: Direcciones y sentidos
-date: 2015-05-22 22:08
+date: 2015-05-22
 sidebar: false
 tags: ["fotografía", "fotodiario"]
 excerpt: Diario fotográfico
