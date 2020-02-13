@@ -1,5 +1,5 @@
 ---
-title: Direcciones y sentidos
+title: La huella del tiempo
 date: 2015-05-22
 sidebar: false
 tags: ["fotografía", "fotodiario"]
