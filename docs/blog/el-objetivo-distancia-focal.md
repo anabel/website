@@ -1,6 +1,7 @@
 ---
 title: El objetivo - La distancia focal
 date: 2018-09-22
+layout: Post
 tags: ["equipo fotográfico", "fotografía"]
 excerpt: El objetivo es uno de los elementos clave que determinan la calidad final de las fotografías; influye sobre todo en la nitidez de la imagen final. Los objetivos se nombran en base a su distancia focal (35mm, 50mm, 80mm... etc), y ésta tiene una relación directa con la perspectiva que se aprecia al usarlos. Explico también que tiene que ver el factor de recorte en todo esto y como calcularlo.
 ---

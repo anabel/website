@@ -1,6 +1,7 @@
 ---
 title: La huella del tiempo
 date: 2015-05-22
+layout: Post
 sidebar: false
 tags: ["fotografía", "fotodiario"]
 excerpt: Diario fotográfico

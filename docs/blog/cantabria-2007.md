@@ -1,6 +1,8 @@
 ---
 title: Cantabria 2007
 date: 2018-10-29
+layout: Post
+comments: false
 sidebar: false
 tags: ["opinión", "fotodiario", "fotografía"]
 excerpt: Fotografiar es atrapar algo tan efímero como un instante. Es ganar una pequeña batalla al reloj, condensando el tiempo en algo tangible, corpóreo, que tiene entidad.
