@@ -14,7 +14,6 @@
 import { mediaQueries } from "@dynamic/tailwindMediaQueries.js";
 
 export default {
-  name: "photo",
   data() {
     return {
       mediaQueries: mediaQueries
