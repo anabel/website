@@ -24,8 +24,6 @@ import Sidebar from "@theme/components/Sidebar.vue";
 import { resolveSidebarItems } from "@parent-theme/util";
 
 export default {
-  name: "BaseLayout",
-
   components: {
     Sidebar,
     Navbar

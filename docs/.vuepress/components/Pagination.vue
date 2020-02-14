@@ -1,6 +1,5 @@
 <script>
 export default {
-  name: "pagination",
   props: {
     page: {
       type: Number

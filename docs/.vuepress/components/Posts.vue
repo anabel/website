@@ -1,13 +1,12 @@
 <template>
   <section class="theme-default-content">
-    <Post-meta v-for="post in postsOfPage" :post="post" />
+    <PostMeta v-for="post in postsOfPage" :post="post" />
     <Pagination :number-of-items="this.posts.length" :page-size="this.pageSize" :page="this.page" />
   </section>
 </template>
 
 <script>
 export default {
-  name: "posts",
   props: {
     posts: {
       type: Array

@@ -15,7 +15,6 @@
 
 <script>
 export default {
-  name: "post-meta",
   props: {
     post: {
       type: Object
