@@ -14,7 +14,7 @@ sidebar: false
 
 <p>Disfruto aprendiendo todo lo que puedo sobre programación, diseño web, fotografía, arte, filosofía, psicología, crianza o nutrición...</p>
 
-<p>También me gusta escribir, por eso aquí me verás contar cosas de todos esos temas. Soy un desastre con las redes sociales y por eso me refugio en este blog.</p>
+<p>Como también me gusta escribir, aquí me verás contar cosas de todos esos temas que me interesan. Soy un desastre con las redes sociales y por eso me refugio en este blog.</p>
 
 </section>
 </div>
