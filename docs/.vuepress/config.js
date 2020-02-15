@@ -47,6 +47,13 @@ module.exports = {
       {
         ga: "UA-59982746-1"
       }
+    ],
+    [
+      "sitemap",
+      {
+        hostname: "https://anabelbarrio.com",
+        exclude: ["/404.html"]
+      }
     ]
   ]
 };
