@@ -40,5 +40,13 @@ module.exports = {
         tailwindConfig.theme.screens
       )}`
     };
-  }
+  },
+  plugins: [
+    [
+      "@vuepress/google-analytics",
+      {
+        ga: "UA-59982746-1"
+      }
+    ]
+  ]
 };
