@@ -80,8 +80,21 @@ h2, h3, h4, .btn, .pagination {
 }
 
 .bio {
-  @apply mx-10;
+  @apply flex flex-col flex-wrap items-center;
 }
+
+.bio-title {
+  @apply mt-0 mb-10 text-center w-full;
+}
+
+.bio-text {
+  @apply flex flex-col w-64;
+}
+
+.bio-photo {
+  @apply object-cover object-center w-64 h-64 rounded-full justify-center mb-10;
+}
+
 
 @tailwind components;
 
@@ -113,7 +126,6 @@ h2, h3, h4, .btn, .pagination {
   h2, h3, h4 {
     @apply mt-4 mb-2;
   }
-
 }
 
 @screen md {
@@ -137,6 +149,21 @@ h2, h3, h4, .btn, .pagination {
     @apply text-base;
   }
 
+  .bio {
+    @apply flex-row;
+  }
+
+  .bio-text {
+    @apply flex flex-col justify-around ml-10;
+  }
+
+  .bio-text p {
+    @apply mt-0;
+  }
+
+  .bio-photo {
+    @apply mb-0 h-auto object-cover rounded-none w-1/2;
+  }
 }
 
 @screen lg {
@@ -161,6 +188,21 @@ h2, h3, h4, .btn, .pagination {
     @apply text-base;
   }
 
+  .bio {
+    @apply flex-row;
+  }
+
+  .bio-text {
+    @apply flex flex-col justify-around ml-10;
+  }
+
+  .bio-text p {
+    @apply mt-0;
+  }
+
+  .bio-photo {
+    @apply mb-0 h-auto object-cover rounded-none w-1/2;
+  }
 }
 
 @screen xl {
@@ -182,6 +224,22 @@ h2, h3, h4, .btn, .pagination {
 
   .metadata, .btn {
     @apply text-base;
+  }
+
+  .bio {
+    @apply flex-row;
+  }
+
+  .bio-text {
+    @apply flex flex-col justify-around ml-10;
+  }
+
+  .bio-text p {
+    @apply mt-0;
+  }
+
+  .bio-photo {
+    @apply mb-0 h-auto object-cover rounded-none w-1/2;
   }
 }
 
