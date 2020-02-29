@@ -20,7 +20,7 @@ Es un evento además donde se apuesta por visibilizar el trabajo de mujeres fot�
 
 ## Certamen de fotógrafas emergentes
 
-En la misma línea se articula un concurso fotográfico para autoras emergentes. Se trata de un certamen abierto a cualquier temática basada en la captura y creación de imágenes, lo que abre el paso a nuevos formatos como el vídeo o la realidad aumentada.
+En la misma línea se articula un concurso fotográfico para autoras emergentes. Se trata de un certamen abierto a cualquier temática basada en la captura y creación de imágenes, lo que abre el paso a nuevos formatos como el vídeo o la realidad virtual.
 
 ### Presentación
 

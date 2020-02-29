@@ -12,7 +12,7 @@ El diafragma es un mecanismo circular montado en el objetivo de la cámara. Su f
 
 <div class="flex flex-wrap justify-center">
 
-<Photo name="apertura_ojo.png" alt="Un ojo cuyo iris es un diafragma" />
+<Photo class="object-scale-down" name="apertura_ojo.png" alt="Un ojo cuyo iris es un diafragma" />
 
 </div>
 
