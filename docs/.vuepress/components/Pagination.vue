@@ -28,11 +28,6 @@ export default {
     previous() {
       return this.page - 1;
     }
-  },
-  methods: {
-    isPage(page) {
-      return page == this.page;
-    }
   }
 };
 </script>

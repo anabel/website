@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`If no page or number of items is passed previous and next buttons should be disabled 1`] = `<nav class="pagination"><span class="btn unactive float-left">Anterior</span> <span class="btn unactive float-right">Siguiente</span></nav>`;
+
+exports[`If there are more than one page and current page is first page previous button should be disabled and next button should be enabled 1`] = `<nav class="pagination"><span class="btn unactive float-left">Anterior</span> <span class="btn float-right"><a>Siguiente</a></span></nav>`;
+
+exports[`If there are more than one page and current page is last page previous button should be enabled and last button should be disabled 1`] = `<nav class="pagination"><span class="btn float-left"><a>Anterior</a></span> <span class="btn unactive float-right">Siguiente</span></nav>`;
+
+exports[`If there are more than two pages and current page is a middle one previous and next button should be enabled 1`] = `<nav class="pagination"><span class="btn float-left"><a>Anterior</a></span> <span class="btn float-right"><a>Siguiente</a></span></nav>`;
+
+exports[`If there is one page previous and next buttons should be disabled 1`] = `<nav class="pagination"><span class="btn unactive float-left">Anterior</span> <span class="btn unactive float-right">Siguiente</span></nav>`;
