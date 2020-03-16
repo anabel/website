@@ -13,15 +13,15 @@ STATUS: **WIP**
 ## Development
 
 ```bash
-yarn add vuepress -D
-```
-
-```bash
 yarn
 ```
 
 ```bash
 yarn dev
+```
+
+```bash
+yarn test
 ```
 
 ## Resources
