@@ -1,5 +1,5 @@
 <template>
-  <picture v-if="breakpoints">
+  <picture>
     <source
       v-for="breakpoint in this.breakpoints"
       :srcset="getImageUrl(src(breakpoint))"
@@ -7,7 +7,6 @@
     />
     <img :src="getImageUrl(this.name)" :alt="this.alt" />
   </picture>
-  <img v-else :src="getImageUrl(this.name)" :alt="this.alt" />
 </template>
 
 <script>
