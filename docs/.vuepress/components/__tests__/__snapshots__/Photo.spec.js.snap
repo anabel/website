@@ -1,0 +1,8 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`If a breakpoint is passed source tags is displayed with corresponding mediaCondition 1`] = `
+<picture>
+  <source srcset="/path/foto.jpg" media="(min-width: 640px) and (max-width: 767px)"> <img src="/path/foto.jpg" alt="descripcion de la foto"></picture>
+`;
+
+exports[`If no breakpoints are passed source tags are not displayed 1`] = `<picture> <img src="/path/foto.jpg" alt="descripcion de la foto"></picture>`;
