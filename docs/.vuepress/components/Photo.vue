@@ -1,24 +1,19 @@
 <template>
-  <picture v-if="breakpoints">
+  <picture>
     <source
-      v-for="breakpoint in this.breakpoints"
-      :srcset="getImageUrl(src(breakpoint))"
+      v-for="breakpoint in this.sanitizedBreakpoints"
+      :srcset="url(filename(breakpoint))"
       :media="media(breakpoint)"
     />
-    <img :src="getImageUrl(this.name)" :alt="this.alt" />
+    <img :src="url(this.name)" :alt="this.alt" />
   </picture>
-  <img v-else :src="getImageUrl(this.name)" :alt="this.alt" />
 </template>
 
 <script>
-import { mediaQueries } from "@dynamic/tailwindMediaQueries.js";
+import { mediaConditions } from "./twMediaQueryAdapter";
+import { url } from "./urlUtils";
 
 export default {
-  data() {
-    return {
-      mediaQueries: mediaQueries
-    };
-  },
   props: {
     name: {
       type: String,
@@ -32,22 +27,18 @@ export default {
     }
   },
   computed: {
-    mediaConditions() {
-      let conditions = new Map();
-      for (const screen in mediaQueries) {
-        if (mediaQueries.hasOwnProperty(screen)) {
-          let condition = this.mediaCondition(mediaQueries[screen]);
-          conditions.set(screen, condition);
-        }
+    sanitizedBreakpoints() {
+      if (!this.breakpoints) {
+        return this.breakpoints;
       }
-      return conditions;
+      return this.breakpoints.filter(b => mediaConditions.has(b));
     }
   },
   methods: {
     media(breakpoint) {
-      return this.mediaConditions.get(breakpoint);
+      return mediaConditions.get(breakpoint);
     },
-    src(breakpoint) {
+    filename(breakpoint) {
       const separator = ".";
       if (!this.name.includes(separator)) {
         return this.name;
@@ -58,30 +49,7 @@ export default {
         .concat(separator)
         .concat(filename[1]);
     },
-    getImageUrl(filename) {
-      try {
-        return require("@images/" + filename);
-      } catch (error) {}
-    },
-    mediaCondition(mediaQuery) {
-      const mediaFeature = "width";
-      let mediaCondition = [];
-      for (const condition in mediaQuery) {
-        let media;
-        if (mediaQuery.hasOwnProperty(condition)) {
-          let value = mediaQuery[condition];
-          media = "("
-            .concat(condition)
-            .concat("-")
-            .concat(mediaFeature)
-            .concat(": ")
-            .concat(value)
-            .concat(")");
-        }
-        mediaCondition.push(media);
-      }
-      return mediaCondition.join(" and ");
-    }
+    url
   }
 };
 </script>
