@@ -1,7 +1,7 @@
 <template>
   <picture>
     <source
-      v-for="breakpoint in this.breakpoints"
+      v-for="breakpoint in this.sanitizedBreakpoints"
       :srcset="url(filename(breakpoint))"
       :media="media(breakpoint)"
     />
@@ -24,6 +24,14 @@ export default {
     },
     breakpoints: {
       type: Array
+    }
+  },
+  computed: {
+    sanitizedBreakpoints() {
+      if (!this.breakpoints) {
+        return this.breakpoints;
+      }
+      return this.breakpoints.filter(b => mediaConditions.has(b));
     }
   },
   methods: {

@@ -10,7 +10,7 @@ jest.mock("../twMediaQueryAdapter", () => ({
 }));
 
 jest.mock("../urlUtils.js", () => ({
-  url: jest.fn(() => "/path/foto.jpg")
+  url: jest.fn(f => "/path/" + f)
 }));
 
 describe("If no breakpoints are passed", () => {
@@ -35,7 +35,35 @@ describe("If a breakpoint is passed", () => {
     }
   });
 
-  it("source tags is displayed with corresponding media condition", () => {
+  it("source tags is displayed with corresponding filename and media condition", () => {
+    expect(wrapper.html()).toMatchSnapshot();
+  });
+});
+
+describe("If a non existent breakpoint is passed", () => {
+  const wrapper = shallowMount(Photo, {
+    propsData: {
+      name: "foto.jpg",
+      alt: "descripcion de la foto",
+      breakpoints: ["nonexistent"]
+    }
+  });
+
+  it("source tags is not displayed", () => {
+    expect(wrapper.html()).toMatchSnapshot();
+  });
+});
+
+describe("If multiple breakpoints are passed", () => {
+  const wrapper = shallowMount(Photo, {
+    propsData: {
+      name: "foto.jpg",
+      alt: "descripcion de la foto",
+      breakpoints: ["nonexistent", "sm"]
+    }
+  });
+
+  it("only valid breakpoints are displayed", () => {
     expect(wrapper.html()).toMatchSnapshot();
   });
 });
