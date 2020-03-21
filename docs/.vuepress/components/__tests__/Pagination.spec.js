@@ -1,92 +1,130 @@
 import Pagination from "../Pagination.vue";
 import { mount, RouterLinkStub } from "@vue/test-utils";
 
-describe("If no page or number of items is passed", () => {
-  const wrapper = mount(Pagination, {});
+describe("If hasPrevious is false", () => {
+  const wrapper = mount(Pagination, {
+    stubs: {
+      RouterLink: RouterLinkStub
+    },
+    propsData: {
+      hasPrevious: () => {
+        return false;
+      },
+      hasNext: () => {
+        return false;
+      }
+    }
+  });
 
-  it("previous and next buttons should be disabled", () => {
+  it("previous should be disabled", () => {
     expect(wrapper.html()).toMatchSnapshot();
   });
 });
 
-describe("If there is one page", () => {
+describe("If hasPrevious is true", () => {
   const wrapper = mount(Pagination, {
     stubs: {
       RouterLink: RouterLinkStub
     },
-    propsData: { page: 1, numberOfItems: 10 }
+    propsData: {
+      hasPrevious: () => {
+        return true;
+      },
+      hasNext: () => {
+        return false;
+      }
+    }
   });
 
-  it("previous and next buttons should be disabled", () => {
+  it("previous should be `a` tag", () => {
     expect(wrapper.html()).toMatchSnapshot();
   });
 });
 
-describe("If there are more than one page and current page is first page", () => {
+describe("If hasPrevious is true and previous is 1", () => {
   const wrapper = mount(Pagination, {
     stubs: {
       RouterLink: RouterLinkStub
     },
-    propsData: { page: 1, numberOfItems: 30 }
-  });
-
-  it("previous button should be disabled and next button should be enabled", () => {
-    expect(wrapper.html()).toMatchSnapshot();
-  });
-});
-
-describe("If there are more than one page and current page is last page", () => {
-  const wrapper = mount(Pagination, {
-    stubs: {
-      RouterLink: RouterLinkStub
-    },
-    propsData: { page: 2, numberOfItems: 20 }
-  });
-
-  it("previous button should be enabled and last button should be disabled", () => {
-    expect(wrapper.html()).toMatchSnapshot();
-  });
-});
-
-describe("If there are more than two pages and current page is a middle one", () => {
-  const wrapper = mount(Pagination, {
-    stubs: {
-      RouterLink: RouterLinkStub
-    },
-    propsData: { page: 2, numberOfItems: 30 }
-  });
-
-  it("previous and next button should be enabled", () => {
-    expect(wrapper.html()).toMatchSnapshot();
-  });
-});
-
-describe("If current page is 1", () => {
-  const wrapper = mount(Pagination, {
-    stubs: {
-      RouterLink: RouterLinkStub
-    },
-    propsData: { page: 1, numberOfItems: 30 }
-  });
-
-  const expectedTo = { path: "/posts/2" };
-
-  it("next page should be 2", () => {
-    expect(wrapper.find(RouterLinkStub).props().to).toStrictEqual(expectedTo);
-  });
-});
-
-describe("If current page is 2", () => {
-  const wrapper = mount(Pagination, {
-    stubs: {
-      RouterLink: RouterLinkStub
-    },
-    propsData: { page: 2, numberOfItems: 20 }
+    propsData: {
+      hasPrevious: () => {
+        return true;
+      },
+      hasNext: () => {
+        return false;
+      },
+      previous: 1
+    }
   });
 
   const expectedTo = { path: "/posts/1" };
 
-  it("previous page should be 1", () => {
+  console.log(wrapper.find(RouterLinkStub).props().to);
+
+  it("previous button should be `a` tag and have expected path", () => {
+    expect(wrapper.find(RouterLinkStub).props().to).toStrictEqual(expectedTo);
+  });
+});
+
+describe("If hasNext is false", () => {
+  const wrapper = mount(Pagination, {
+    stubs: {
+      RouterLink: RouterLinkStub
+    },
+    propsData: {
+      hasPrevious: () => {
+        return false;
+      },
+      hasNext: () => {
+        return false;
+      }
+    }
+  });
+
+  it("next should be disabled", () => {
+    expect(wrapper.html()).toMatchSnapshot();
+  });
+});
+
+describe("If hasNext is true", () => {
+  const wrapper = mount(Pagination, {
+    stubs: {
+      RouterLink: RouterLinkStub
+    },
+    propsData: {
+      hasPrevious: () => {
+        return false;
+      },
+      hasNext: () => {
+        return true;
+      }
+    }
+  });
+
+  it("previous should be `a` tag", () => {
+    expect(wrapper.html()).toMatchSnapshot();
+  });
+});
+
+describe("If hasNext is true and next is 1", () => {
+  const wrapper = mount(Pagination, {
+    stubs: {
+      RouterLink: RouterLinkStub
+    },
+    propsData: {
+      hasPrevious: () => {
+        return false;
+      },
+      hasNext: () => {
+        return true;
+      },
+      next: 1
+    }
+  });
+
+  const expectedTo = { path: "/posts/1" };
+
+  it("next button should be `a` tag and have expected path", () => {
     expect(wrapper.find(RouterLinkStub).props().to).toStrictEqual(expectedTo);
   });
 });

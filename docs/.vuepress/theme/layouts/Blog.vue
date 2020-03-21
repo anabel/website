@@ -1,10 +1,19 @@
 <template>
   <BaseLayout>
-    <template #content v-bind:page="this.page" v-bind:pageSize="this.pageSize">
-      <RenderlessPosts>
-        <div slot-scope="{ posts }">
-          <Posts :posts="posts" :page="page" :page-size="pageSize" />
-        </div>
+    <template #content>
+      <RenderlessPosts :page="page">
+        <section
+          slot-scope="{ posts, hasNext, hasPrevious, next, previous }"
+          class="theme-default-content"
+        >
+          <PostMeta v-for="post in posts" :post="post" />
+          <Pagination
+            :hasNext="hasNext"
+            :hasPrevious="hasPrevious"
+            :next="next"
+            :previous="previous"
+          />
+        </section>
       </RenderlessPosts>
     </template>
   </BaseLayout>
@@ -20,15 +29,8 @@ export default {
       default: 1
     }
   },
-
   components: {
     BaseLayout
-  },
-
-  data() {
-    return {
-      pageSize: 5
-    };
   }
 };
 </script>
