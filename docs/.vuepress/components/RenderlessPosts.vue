@@ -1,4 +1,5 @@
 <script>
+const POST = "Post";
 export default {
   data() {
     return {
@@ -6,13 +7,16 @@ export default {
     };
   },
   props: {
+    docs: {
+      type: Array
+    },
     page: {
       type: Number
     }
   },
   computed: {
     posts() {
-      return this.$site.pages.filter(x => this.isAPost(x));
+      return this.docs.filter(x => this.isAPost(x));
     },
     postsByDate() {
       return this.posts.sort(
@@ -29,15 +33,21 @@ export default {
       return Math.ceil(this.posts.length / this.pageSize);
     },
     next() {
+      if (!this.hasNext()) {
+        return this.page;
+      }
       return this.page + 1;
     },
     previous() {
+      if (!this.hasPrevious()) {
+        return this.page;
+      }
       return this.page - 1;
     }
   },
   methods: {
     isAPost(page) {
-      return page.path.startsWith("/blog/") && !!page.frontmatter.date;
+      return page.frontmatter.layout === POST;
     },
     hasPrevious() {
       return this.page - 1 > 0;

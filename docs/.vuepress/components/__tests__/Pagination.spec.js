@@ -59,8 +59,6 @@ describe("If hasPrevious is true and previous is 1", () => {
 
   const expectedTo = { path: "/posts/1" };
 
-  console.log(wrapper.find(RouterLinkStub).props().to);
-
   it("previous button should be `a` tag and have expected path", () => {
     expect(wrapper.find(RouterLinkStub).props().to).toStrictEqual(expectedTo);
   });
