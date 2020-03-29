@@ -10,9 +10,9 @@ excerpt: El diafragma es un mecanismo circular montado en el objetivo de la cám
 
 El diafragma es un mecanismo circular montado en el objetivo de la cámara. Su funcionamiento recuerda al del ojo humano; se abre y cierra como el iris para dejar pasar más o menos luz.
 
-<div class="flex flex-wrap justify-center">
+<div class="flex justify-center">
 
-<Photo class="object-scale-down" name="apertura_ojo.png" alt="Un ojo cuyo iris es un diafragma" />
+<img class="object-scale-down" src="~@images/apertura_ojo.png" alt="Un ojo cuyo iris es un diafragma" />
 
 </div>
 
@@ -24,8 +24,8 @@ La apertura del diafragma nos permite **controlar la cantidad de luz que incide 
 
 El número f es la forma de señalar qué área del objetivo va a dejar pasar la luz durante la exposición. Cuanto menor el número f más abierto está el diafragma y por tanto más cantidad de luz entra en el sensor.
 
-<div class="flex flex-wrap justify-center">
-<Photo name="diafragma_numero_f.gif" alt="Relación entre el diafragma y el número f" />
+<div class="flex justify-center">
+<img src="~@images/diafragma_numero_f.gif" alt="Relación entre el diafragma y el número f" />
 </div>
 
 Se trata de un valor relativo, que representa **el diámetro del objetivo en base a su distancia focal.** Un f2, por ejemplo, significa que tenemos una apertura de diafragma tal que su diámetro es la mitad de la [longitud focal del objetivo](https://www.anabelbarrio.com/2018/09/el-objetivo/).
@@ -34,8 +34,8 @@ Se trata de un valor relativo, que representa **el diámetro del objetivo en bas
 
 **Es una forma de estandarizar la luminosidad** y poder referirnos a ella independientemente del objetivo del que hablemos. Esto quiere decir que un f/2.8 implica la misma cantidad de luz para un objetivo 50mm que para un 70mm, aunque el diámetro efectivo de cada uno de estos objetivos sea distinto.
 
-<div class="flex flex-wrap justify-center">
-  <Photo class="w-full" name="numero_f.jpg" alt="Número f grabado en un objetivo" />
+<div class="flex justify-center">
+  <img class="w-full" src="~@images/numero_f.jpg" alt="Número f grabado en un objetivo" />
 </div>
 
 La luminosidad es una característica determinante para valorar la calidad de un objetivo. Cuanta más luminosidad tenga un objetivo, mayor será la calidad de las fotografías que obtengamos con él, y más posibilidades nos ofrecerá en escenarios complicados, con escasa iluminación, o donde el tiempo de exposición sea crítico.

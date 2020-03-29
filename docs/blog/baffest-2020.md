@@ -8,7 +8,7 @@ excerpt: El pasado 12 de febrero fue la presentación de la quinta edición del 
 
 # Baffest 2020
 
-<Photo class="w-full h-auto my-5" name="baffest_2020.jpg" />
+<Photo class="my-5" name="baffest_2020.jpg" />
 
 El pasado 12 de febrero fue la presentación de la quinta edición del [Baffest](https://baffest.eus/) en el espacio cedido por la escuela de fotografía documental [Blackkamera](http://blackkamera.com/)
 
@@ -26,13 +26,11 @@ En la misma línea se articula un concurso fotográfico para autoras emergentes.
 
 En la presentación se mostraron los trabajos de las ganadoras de los dos últimos años, Ura Iturralde (2018) y Aitziber Orkolaga (2019).
 
-<div class="flex flex-col items-center md:flex-row lg:flex-row xl:flex-row mt-5 mb-10">
+<div class="baffest-artist-block flex-row">
 
-<Photo class="bio-photo mr-10" name="ura_iturralde.jpg" />
-
-<div class="flex flex-col">
+<Photo class="baffest-artist" name="ura_iturralde.jpg"  alt="Ura Iturralde" />
+<div class="flex flex-col w-1/2">
 <h4> Ura Iturralde </h4>
-
 Ura es una fotógrafa documental cuyo interés principal es retratar minorías y sus modos de vida. El centro de su trabajo es contar esas historias que atrapan su curiosidad, y la fotografía es el mejor medio que ha encontrado para hacerlo.
 
 Sus fotografías tienen ese trasfondo narrativo, en todas se aprecia esa intención de ahondar en las personas y su entorno, de desvelar los entresijos de su vida cotidiana y mostrar esas realidades que investiga desde su óptica costumbrista.
@@ -42,13 +40,10 @@ Podéis apreciar su trabajo en su web: [http://www.uraiturralde.net/](http://www
 </div>
 </div>
 
-<div class="flex flex-col items-center md:flex-row lg:flex-row xl:flex-row">
-
-<Photo class="bio-photo mr-10" name="aitziber_orkolaga.jpg" />
-
-<div class="flex flex-col">
+<div class="baffest-artist-block  flex-row-reverse">
+<Photo class="baffest-artist" name="aitziber_orkolaga.jpg" alt="Aitziber Orkolaga" />
+<div class="flex flex-col w-1/2">
 <h4> Aitziber Orkolaga </h4>
-
 El de Aitziber es un trabajo de introspección, intimista, que brota de la necesidad de elaborar un duelo, el de su padre, sin apenas fotografías que mantengan viva esa memoria.
 
 Es por tanto una serie formada por fotografías conceptuales, muy simbólicas y cargadas de códigos y poesía... llenas de metáforas.
@@ -56,5 +51,11 @@ Es por tanto una serie formada por fotografías conceptuales, muy simbólicas y 
 Aitziber es la ganadora del 2019 por tanto os animo a ver su exposición Plaketak en vivo en los jardines de la Escuela de Idiomas de Barakaldo, aunque también lo encontraréis en su web: [https://www.aitziberorkolaga.com/](https://www.aitziberorkolaga.com/)
 
 </div>
-
 </div>
+
+<style lang="stylus">
+.baffest-artist img
+  @apply object-cover object-center w-64 h-64 rounded-full p-10
+.baffest-artist-block
+  @apply flex flex-wrap items-center justify-center
+</style>

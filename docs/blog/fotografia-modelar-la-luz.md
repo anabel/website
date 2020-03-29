@@ -18,11 +18,11 @@ Parece ser que griegos y chinos fueron los primeros en preguntarse sobre el fen�
 
 Estos precursores de la fotografía se dieron cuenta de que si creaban un orificio diminuto en una habitación cerrada, la luz se filtraba y proyectaba sobre la pared, reflejando una imagen invertida del exterior.
 
-<Photo name="camara_oscura.jpg" alt="Dibujo que muestra cómo funcionaban las primeras cámaras oscuras" />
+<img class="w-full" src="~@images/camara_oscura.jpg" alt="Dibujo que muestra cómo funcionaban las primeras cámaras oscuras" />
 _El concepto de la cámara oscura_
 
 Siglos de ciencia, experiencia acumulada y, sobre todo, curiosidad consiguieron dar la vuelta a esa imagen efímera y, finalmente, fijarla en un soporte.
-<Photo name="boulevard_du_temple_by_daguerre.jpg" alt="La primera fotografía realizada" />
+<img class="w-full" src="~@images/boulevard_du_temple_by_daguerre.jpg" alt="La primera fotografía realizada" />
 _Boulevard du Temple 1838. Daguerre_
 
 ## Un poco de historia
@@ -32,17 +32,17 @@ Volviendo a la definición, me gusta mucho además que la fotografía se defina 
 Para los filósofos y estudiosos de la Grecia clásica era otro interrogante sobre el mundo a responder. Pintores y artistas la utilizaron durante siglos como calco y apoyo para crear perspectiva. Fue el entretenimiento de los intelectuales durante la industrialización y se convirtió en herramienta política de una incipiente burguesía, que quiso dotarse con esas primeras fotografías de un símbolo de estatus similar al que históricamente habían tenido los retratos aristocráticos.
 
 <div class="grid grid-cols-4 sm:flex sm:justify-center">
-  <Photo class="sm:w-64" name="primeras_fotografias_1.jpg" alt="Retrato de un grupo de mujeres burguesas" />
-  <Photo class="sm:hidden" name="primeras_fotografias_2.jpg" alt="Retrato familiar" />
-  <Photo class="sm:hidden" name="primeras_fotografias_3.jpg" alt="Retrato de un mago" />
-  <Photo class="sm:w-64" name="primeras_fotografias_4.jpg" alt="Retrato teatralizado de un grupo de mujeres" />
+  <img class="sm:w-64" src="~@images/primeras_fotografias_1.jpg" alt="Retrato de un grupo de mujeres burguesas" />
+  <img class="sm:hidden" src="~@images/primeras_fotografias_2.jpg" alt="Retrato familiar" />
+  <img class="sm:hidden" src="~@images/primeras_fotografias_3.jpg" alt="Retrato de un mago" />
+  <img class="sm:w-64" src="~@images/primeras_fotografias_4.jpg" alt="Retrato teatralizado de un grupo de mujeres" />
 </div>
 
 Paralelamente la fotografía comenzó a usarse para documentar y registrar lugares cotidianos. En muy pocos años grandes avances técnicos permitieron mostrar al mundo con gran fidelidad lugares recónditos de los que hasta entonces solo se había podido oír hablar.
 
 <div class="grid grid-rows-2 justify-center">
-  <Photo class="object-cover" name="canaletto_fogli.jpg" alt="Retrato de un mago" />
-  <Photo class="object-cover" name="piramides_por_le_gray.jpg" alt="Panorámica de las pirámides de egipto" />
+  <img class="object-cover" src="~@images/canaletto_fogli.jpg" alt="Retrato de un mago" />
+  <img class="object-cover" src="~@images/piramides_por_le_gray.jpg" alt="Panorámica de las pirámides de egipto" />
 </div>
 
 ## Fotografía como arte

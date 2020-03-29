@@ -41,11 +41,11 @@ En el distrito de Nagata nos encontramos con Tetsujin, un robot de 18 metros de 
 Decidas lo que decidas visitar en Kobe, no pierdas la oportunidad de callejear por china town y el resto de zonas comerciales. Nosotros encontramos muchos callejones que te sumergen en ese ambiente lúgubre, decadente y a la vez moderno que tantas películas de ciencia ficción han emulado. El ciberpunk no sólo se respira en ciudades como Osaka o Tokio, con su calle de los Yakitoris.
 
 <div class="flex flex-col">
-  <Photo class="object-scale-down" name="kobe_1.jpg" alt="" />
-  <Photo class="object-scale-down" name="kobe_2.jpg" alt="" />
-  <Photo class="object-scale-down" name="kobe_3.jpg" alt="" />
-  <Photo class="object-scale-down" name="kobe_4.jpg" alt="" />
-  <Photo class="object-scale-down" name="kobe_5.jpg" alt="" />
-  <Photo class="object-scale-down" name="kobe_6.jpg" alt="" />
-  <Photo class="object-scale-down" name="kobe_7.jpg" alt="" />
+  <img class="object-scale-down" src="~@images/kobe_1.jpg" alt="" />
+  <img class="object-scale-down" src="~@images/kobe_2.jpg" alt="" />
+  <img class="object-scale-down" src="~@images/kobe_3.jpg" alt="" />
+  <img class="object-scale-down" src="~@images/kobe_4.jpg" alt="" />
+  <img class="object-scale-down" src="~@images/kobe_5.jpg" alt="" />
+  <img class="object-scale-down" src="~@images/kobe_6.jpg" alt="" />
+  <img class="object-scale-down" src="~@images/kobe_7.jpg" alt="" />
 </div>
