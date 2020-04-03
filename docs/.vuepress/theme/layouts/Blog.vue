@@ -1,24 +1,24 @@
 <template>
-  <BaseLayout>
+  <base-layout>
     <template #content>
-      <VuepressDocsAdapter>
-        <RenderlessPosts slot-scope="{ docs }" :page="page" :docs="docs">
+      <vuepress-docs-adapter>
+        <renderless-posts slot-scope="{ docs }" :page="page" :docs="docs">
           <section
             slot-scope="{ posts, hasNext, hasPrevious, next, previous }"
             class="theme-default-content"
           >
-            <PostMeta v-for="post in posts" :post="post" />
-            <Pagination
+            <post-meta v-for="post in posts" :post="post" />
+            <pagination
               :hasNext="hasNext"
               :hasPrevious="hasPrevious"
               :next="next"
               :previous="previous"
             />
           </section>
-        </RenderlessPosts>
-      </VuepressDocsAdapter>
+        </renderless-posts>
+      </vuepress-docs-adapter>
     </template>
-  </BaseLayout>
+  </base-layout>
 </template>
 
 <script>
