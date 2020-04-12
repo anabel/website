@@ -2,6 +2,10 @@
 title: Cómo enlazar dinámicamente imágenes en Vue(press)
 date: 2020-02-29
 layout: Post
+thumbnail: {
+  name: vuepress_logo.png, 
+  alt: Logo de vuepress, 
+  style: center }
 tags: ["programación", "webpack", "imágenes", "tips"]
 excerpt: Aprende a gestionar de forma dinámica los recursos de tu proyecto vuepress usando webpack.
 ---

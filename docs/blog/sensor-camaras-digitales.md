@@ -2,6 +2,11 @@
 title: El sensor de las cámaras digitales
 date: 2009-05-17
 layout: Post
+thumbnail:
+  {
+    name: "lupa_sobre_foto_muestra_pixeles.jpg",
+    alt: "Una mano sujeta una lupa que muestra simbólicamente los píxeles de una fotografía de paisaje",
+  }
 tags: "equipo fotográfico"
 excerpt: Describo qué es el sensor de una cámara digital, cómo funciona y comparo algunas opciones del mercado.
 ---

@@ -3,7 +3,7 @@
     <base-layout>
       <template #content v-bind:showComments="this.showComments()">
         <section class="theme-default-content">
-          <content />
+          <Content />
           <comments v-if="showComments" />
         </section>
       </template>

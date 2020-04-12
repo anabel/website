@@ -2,6 +2,11 @@
 title: Diario del viaje a Japón - Kobe
 date: 2015-08-02
 layout: Post
+thumbnail: {
+  name: kobe_puerto.jpg, 
+  alt: vista nocturna del puerto de kobe
+}
+
 tags: ["viajes", "fotografía"]
 excerpt: Repaso a la primera etapa del viaje a Japón. 12 horas de vuelo con un trasbordo corto en Charles de Gaulle para llegar finalmente a Osaka, desde donde visitamos Kobe.
 ---

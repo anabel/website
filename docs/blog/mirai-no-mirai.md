@@ -2,6 +2,10 @@
 title: Mirai no mirai
 date: 2019-03-19
 layout: Post
+thumbnail: {
+  name: mirai_no_mirai.jpg, 
+  alt: Cartel mirai no mirai, 
+  style: full }
 sidebar: false
 tags: ["cine", "opinión"]
 excerpt: Comentarios sobre la película de animación.

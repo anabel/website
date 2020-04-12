@@ -2,9 +2,15 @@
 title: Unboxing life is strange
 date: 2016-04-23
 layout: Post
+thumbnail: {
+  name: life_is_strange_header.jpg, 
+  alt: Caja de la edición limitada de life is strange
+  }
 tags: ["videojuegos", "opinión"]
 excerpt: Comentarios sobre el primer videojuego Life is strange e imágenes de su edición coleccionista.
 ---
+
+<Photo name="life_is_strange_caja_1.jpg" alt="Vista lateral del lomo de la caja de la edición limitada" />
 
 # Unboxing Life is Strange
 
@@ -21,6 +27,8 @@ Es un [videojuego de libre albedrío](http://www.lifeisstrange.com) que trata so
 Lo que más me llamaba la atención del juego -aunque ya con **la temática fotográfica y el arte del juego** me tenían ganada- es que Max puede **saltar al pasado** y cambiar sus decisiones. Además, estas elecciones tienen consecuencias (a veces desastrosas) en el desarrollo de la historia hasta el punto de que existen **varios posibles finales**.
 
 ## Edición limitada
+
+<Photo name="life_is_strange_unboxing_2.jpg" alt="Extras de la edición limitada de life is strange" />
 
 La edición limitada además incluye:
 
