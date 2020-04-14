@@ -4,6 +4,10 @@ date: 2018-10-29
 layout: Post
 comments: false
 sidebar: false
+thumbnail: {
+  name: "abuelito.jpg",
+  alt: "Macro del corazón de un abuelito de primavera"
+}
 tags: ["opinión", "fotodiario", "fotografía"]
 excerpt: Fotografiar es atrapar algo tan efímero como un instante. Es ganar una pequeña batalla al reloj, condensando el tiempo en algo tangible, corpóreo, que tiene entidad.
 ---
@@ -12,7 +16,7 @@ excerpt: Fotografiar es atrapar algo tan efímero como un instante. Es ganar una
 
 Fotografiar es atrapar algo tan efímero como un instante.
 
-full<Photo class="-width" name="abuelito.jpg" alt="Macro del corazón de un abuelito de primavera" />
+<Photo class="full-width" name="abuelito.jpg" alt="Macro del corazón de un abuelito de primavera" />
 <Photo class="full-width" name="paseo_por_la_playa_1.jpg" alt="Un chico pasea por la orilla del mar" />
 
 Es ganar una pequeña batalla al reloj, condensando el tiempo en algo tangible, corpóreo, que tiene entidad.

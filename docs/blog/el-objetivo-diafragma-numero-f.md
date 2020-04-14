@@ -2,6 +2,10 @@
 title: El objetivo - diafragma y número f
 date: 2019-10-20
 layout: Post
+thumbnail: {
+  name: "diafragma_cerrado.jpg",
+  alt: "Objetivo con diafragma cerrado"
+}
 tags: ["equipo fotográfico", "fotografía"]
 excerpt: El diafragma es un mecanismo circular montado en el objetivo de la cámara que permite controlar la cantidad de luz que entra en el sensor. Para medir esta apertura se usa el número f, que señala el área del objetivo que queda abierta durante la exposición. Los posibles valores de apertura de un objetivo se llaman pasos, hablo ahora de cuales son y de su relación con la distancia focal.
 ---

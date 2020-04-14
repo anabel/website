@@ -2,6 +2,10 @@
 title: Nicolas Bruno
 date: 2014-03-15
 layout: Post
+thumbnail: {
+  name: "nicolas_bruno_canion_cabeza.jpg",
+  alt: "Un chico vestido de traje con una manzana en la cabeza está a punto de ser disparado un cañón dirigido por otra persona que se agacha y tapa los oídos esperando la detonación inminente"
+}
 sidebar: false
 tags: ["opinión", "autores"]
 excerpt: Comentarios y análisis de la obra de Nicolas Bruno, un joven autor conceptual con un estilo narrativo bastante particular.

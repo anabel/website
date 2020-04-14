@@ -2,6 +2,10 @@
 title: Presentación Baffest 2020
 date: 2020-02-18
 layout: Post
+thumbnail: {
+  name: baffest_2020.jpg, 
+  alt: cartel del baffest de este año, 
+  style: full }
 tags: ["eventos", "autores", "opinión"]
 excerpt: El pasado 12 de febrero fue la presentación de la quinta edición del Baffest en el espacio cedido por la escuela de fotografía documental Blackkamera.
 ---

@@ -2,6 +2,9 @@
 title: Fotografía - Modelar la luz
 date: 2018-10-20
 layout: Post
+thumbnail: {
+  name: jarez_hogg.jpg, 
+  alt: Jabez Hogg haciendo un retrato en el estudio de Richard Beard}
 tags: ["opinión", "autores"]
 excerpt: Un repaso a los comienzos de la fotografía partiendo de la etimología del propio término.
 ---
@@ -19,6 +22,7 @@ Parece ser que griegos y chinos fueron los primeros en preguntarse sobre el fen�
 Estos precursores de la fotografía se dieron cuenta de que si creaban un orificio diminuto en una habitación cerrada, la luz se filtraba y proyectaba sobre la pared, reflejando una imagen invertida del exterior.
 
 <img class="w-full" src="~@images/camara_oscura.jpg" alt="Dibujo que muestra cómo funcionaban las primeras cámaras oscuras" />
+
 _El concepto de la cámara oscura_
 
 Siglos de ciencia, experiencia acumulada y, sobre todo, curiosidad consiguieron dar la vuelta a esa imagen efímera y, finalmente, fijarla en un soporte.

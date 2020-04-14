@@ -2,6 +2,12 @@
 title: Sensor, resolución y calidad fotográfica
 date: 2009-05-25
 layout: Post
+thumbnail: {
+  breakpoints: ['md', 'lg', 'xl'],
+  name: "pantalla_con_galeria.jpg",
+  alt: "Unas manos sujetan una fotografía de 20x30 en el primer plano mientras se aprecia una pantalla con una galería de fotos en el fondo",
+  style: bottom
+}
 tags: ["equipo fotográfico", "opinión"]
 excerpt: ¿Qué relación hay entre el tamaño del sensor y su calidad? Algunas notas sobre por qué los megapíxeles no son tan importantes.
 ---

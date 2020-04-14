@@ -2,6 +2,11 @@
 title: Algunos fotógrafos infantiles
 date: 2014-06-15
 layout: Post
+thumbnail: {
+  name: "adrian_sommeling.jpg",
+  alt: "Padre e hijo se cubren con un paraguas de una tormenta que hace volar al niño",
+  style: top
+}
 tags: ["opinión", "autores"]
 excerpt: A todos nos gustan las fotografías que nos cuentan historias, que nos atrapan por algo más que su impacto visual. Hoy traigo a varios fotógrafos que hacen a sus hijos protagonistas de las más disparatadas historias, o de las más increíbles escenas.
 ---
