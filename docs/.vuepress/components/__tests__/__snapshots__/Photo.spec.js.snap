@@ -2,14 +2,16 @@
 
 exports[`If a breakpoint is passed source tags is displayed with corresponding filename and media condition 1`] = `
 <picture>
-  <source srcset="/path/foto_sm.jpg" media="(min-width: 640px) and (max-width: 767px)"> <img src="/path/foto.jpg" alt="descripcion de la foto"></picture>
+  <source srcset="/path/foto_sm.jpg" media="(min-width: 640px) and (max-width: 767px)"> <img src="/path/foto.jpg" alt="descripcion de la foto">
+</picture>
 `;
 
 exports[`If a non existent breakpoint is passed source tags is not displayed 1`] = `<picture> <img src="/path/foto.jpg" alt="descripcion de la foto"></picture>`;
 
 exports[`If multiple breakpoints are passed only valid breakpoints are displayed 1`] = `
 <picture>
-  <source srcset="/path/foto_sm.jpg" media="(min-width: 640px) and (max-width: 767px)"> <img src="/path/foto.jpg" alt="descripcion de la foto"></picture>
+  <source srcset="/path/foto_sm.jpg" media="(min-width: 640px) and (max-width: 767px)"> <img src="/path/foto.jpg" alt="descripcion de la foto">
+</picture>
 `;
 
 exports[`If no breakpoints are passed source tags are not displayed 1`] = `<picture> <img src="/path/foto.jpg" alt="descripcion de la foto"></picture>`;
