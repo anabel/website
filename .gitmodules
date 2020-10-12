@@ -1,0 +1,3 @@
+[submodule "docs/blog"]
+	path = docs/blog
+	url = https://github.com/anabel/blog.git
