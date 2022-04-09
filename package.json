@@ -10,7 +10,7 @@
     "test:unit": "vue-cli-service test:unit"
   },
   "dependencies": {
-    "moment": "^2.24.0",
+    "moment": "^2.29.2",
     "tailwindcss": "^1.2.0",
     "vuepress-plugin-sitemap": "^2.3.1"
   },
